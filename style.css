@@ -30,12 +30,8 @@ h1 {
 /* colors */
 
 :root {
-    --color1: #0b1d35;
-    --color2: #11233f;
-    --color3: #7b8594;
-    --color4: #c3c2c2;
-    --color5: #858584;
-    --background: #dcdcdc;
+    --main: #b29155;
+    --white: #dcdcdc;
     --about-width: 400px;
 }
 
@@ -45,7 +41,7 @@ html {
 
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    color: var(--color1);
+    color: black;
 }
 
 .main {
@@ -74,7 +70,7 @@ body {
     display: flex;
     width: 100%;
     height: 60px;
-    background-color: var(--color1);
+    background-color: black;
     justify-content: flex-end;
     align-items: center;
 }
@@ -82,18 +78,18 @@ body {
 .nav-btn {
     display: block;
     margin: 0 1%;
-    color: var(--color4);
+    color: var(--white);
     text-align: center;
     text-decoration: none;
     font-size: 25px;
 }
 
 .nav-btn:hover {
-    color: var(--color3);
+    color: var(--main);
 }
 
 .active {
-    color: var(--color3);
+    color: var(--main);
 }
 
 
@@ -105,7 +101,7 @@ body {
     justify-content: space-between;
     width: 400px;
     height: 100vh;
-    background-color: var(--color2);
+    background-color: black;
     z-index: 20;
 }
 
@@ -115,7 +111,7 @@ body {
 
 .about-details {
     margin: 100px 70px 0;
-    color: var(--color4);
+    color: var(--white);
     font-size: 14px;
     display: flex;
     flex-direction: column;
@@ -128,13 +124,13 @@ body {
     width: 30px;
     height: 100vh;
     line-height: 100vh;
-    background-color: var(--color2);
-    color: var(--color4);
+    background-color: black;
+    color: var(--white);
     text-align: center;
 }
 
 .about-btn:hover {
-    color: var(--color3);
+    color: var(--main);
 }
 
 .visible {
@@ -163,7 +159,8 @@ section {
     padding: 90px 10px 0;
     width: fit-content;
     font-size: 25px;
-    border-bottom: 1px solid var(--color1);
+    color: var(--main);
+    border-bottom: 1px solid var(--main);
 }
 
 .section-container {
@@ -172,7 +169,7 @@ section {
 }
 
 .project-name:hover {
-    color: var(--color3);
+    color: var(--main);
     cursor: pointer;
 }
 
@@ -195,5 +192,5 @@ section {
 
 
 .project.extended > .project-name {
-    color: var(--color3)
+    color: var(--main)
 }
