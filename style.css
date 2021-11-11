@@ -14,6 +14,16 @@ button {
 	font: inherit;
 }
 
+h1 {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
 
 
 
@@ -159,4 +169,31 @@ section {
 .section-container {
     margin: 50px auto 0;
     width: 90%;
+}
+
+.project-name:hover {
+    color: var(--color3);
+    cursor: pointer;
+}
+
+.project {
+    overflow: hidden;
+    height: 30px;
+    transition: height 0.7s ease;
+
+}
+
+.project.extended {
+    height: 150px;
+}
+
+
+.project-details {
+    margin: 10px 2%;
+    width: 96%;
+}
+
+
+.project.extended > .project-name {
+    color: var(--color3)
 }

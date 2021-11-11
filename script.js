@@ -1,6 +1,5 @@
 let about = document.getElementById('about');
 let main = document.getElementById('main');
-let navBtn = document.getElementsByClassName('')
 
 function showHide() {
     if (about_btn.innerHTML == '&lt;&lt;') {
@@ -18,6 +17,7 @@ function showHide() {
     };
 };
 
+
 jQuery('.nav-btn').click(function(){
     if ( jQuery(this).hasClass('active') )
     {
@@ -28,4 +28,17 @@ jQuery('.nav-btn').click(function(){
         jQuery('.header .nav-btn').removeClass('active');
         jQuery(this).addClass('active');
     }
+});
+
+
+jQuery('.project .project-name').click(function(){ 
+	if ( jQuery(this).parent().hasClass('extended') ) 
+	{
+		jQuery('.project').removeClass('extended');
+	}
+	else 
+	{
+        jQuery('.project').removeClass('extended');
+        jQuery(this).parent().addClass('extended');
+	}
 });
