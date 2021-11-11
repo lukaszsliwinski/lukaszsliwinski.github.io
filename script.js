@@ -1,5 +1,6 @@
 let about = document.getElementById('about');
 let main = document.getElementById('main');
+let navBtn = document.getElementsByClassName('')
 
 function showHide() {
     if (about_btn.innerHTML == '&lt;&lt;') {
@@ -16,3 +17,15 @@ function showHide() {
         main.classList.add('narrower');
     };
 };
+
+jQuery('.nav-btn').click(function(){
+    if ( jQuery(this).hasClass('active') )
+    {
+        jQuery('.header').removeClass('active')
+    }
+    else 
+    {
+        jQuery('.header .nav-btn').removeClass('active');
+        jQuery(this).addClass('active');
+    }
+});

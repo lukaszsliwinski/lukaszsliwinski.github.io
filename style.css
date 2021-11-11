@@ -82,6 +82,10 @@ body {
     color: var(--color3);
 }
 
+.active {
+    color: var(--color3);
+}
+
 
 
 .about {
