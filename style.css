@@ -26,6 +26,7 @@ button {
     --color4: #c3c2c2;
     --color5: #858584;
     --background: #dcdcdc;
+    --about-width: 400px;
 }
 
 html {
@@ -34,7 +35,7 @@ html {
 
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    background-color: var(--background);
+    color: var(--color1);
 }
 
 .main {
@@ -63,7 +64,7 @@ body {
     display: flex;
     width: 100%;
     height: 60px;
-    background-color: green;
+    background-color: var(--color1);
     justify-content: flex-end;
     align-items: center;
 }
@@ -71,34 +72,55 @@ body {
 .nav-btn {
     display: block;
     margin: 0 1%;
-    color: white;
+    color: var(--color4);
     text-align: center;
     text-decoration: none;
     font-size: 25px;
-
 }
 
-.about-btn {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 100vh;
-    line-height: 100vh;
-    background-color: blue;
-    color: white;
-    text-align: center;
-    z-index: 30;
+.nav-btn:hover {
+    color: var(--color3);
 }
+
 
 
 .about {
     position: fixed;
     top: 0;
+    display: flex;
+    justify-content: space-between;
     width: 400px;
     height: 100vh;
-    background-color: red;
+    background-color: var(--color2);
     z-index: 20;
+}
+
+.photo {
+    border-radius: 50%;
+}
+
+.about-details {
+    margin: 100px 70px 0;
+    color: var(--color4);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+
+.about-btn {
+    width: 30px;
+    height: 100vh;
+    line-height: 100vh;
+    background-color: var(--color2);
+    color: var(--color4);
+    text-align: center;
+}
+
+.about-btn:hover {
+    color: var(--color3);
 }
 
 .visible {
@@ -116,7 +138,6 @@ body {
 
 section {
     min-height: calc(100vh - 60px);
-    background-color: rgb(240, 240, 240);
 }
 
 .introduction {
@@ -128,8 +149,7 @@ section {
     padding: 90px 10px 0;
     width: fit-content;
     font-size: 25px;
-    color: rgb(70, 70, 70);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--color1);
 }
 
 .section-container {
