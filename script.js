@@ -22,11 +22,12 @@ jQuery('.project .project-name').click(function(){
 	if ( jQuery(this).parent().hasClass('extended') ) 
 	{
 		jQuery('.project').removeClass('extended');
-	}
-	else 
-	{
+        jQuery(this).children().html('&#129095;');
+	} else {
         jQuery('.project').removeClass('extended');
+        jQuery('.extend-btn').html('&#129095;');
         jQuery(this).parent().addClass('extended');
+        jQuery(this).children().html('&#129093;');
 	}
 });
 
