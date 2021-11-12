@@ -31,7 +31,7 @@ jQuery('.project .project-name').click(function(){
 	}
 });
 
-
+// highlight navigation menu
 const sections = document.querySelectorAll('.section-header');
 const navLi = document.querySelectorAll('.header a');
 

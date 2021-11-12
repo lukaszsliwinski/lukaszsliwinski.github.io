@@ -1,0 +1,35 @@
+/* colors */
+:root {
+    --main: #b29155;
+    --white: #dcdcdc;
+}
+
+
+/* Main page styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: black;
+}
+
+.main {
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+}
+
+.wider {
+    transition: all 0.7s ease;
+    margin-left: 30px;
+    width: calc(100vw - 60px);
+}
+
+.narrower {
+    transition: all 0.7s ease;
+    margin-left: 430px;
+    width: calc(100vw - 460px);
+}

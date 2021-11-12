@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Łukasz Śliwiński - portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="sections.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
 </head>
 <body>
     <div class="main narrower" id="main">
+
+        <!-- Navigation menu -->
         <header class="header">
             <a class="nav-btn underline introduction active" href="#introduction">Introduction</a>
             <a class="nav-btn underline projects" href="#projects">Projects</a>
             <a class="nav-btn underline work" href="#work">Work</a>
             <a class="nav-btn underline education" href="#education">Education</a>
             <a class="nav-btn underline contact" href="#contact">Contact</a>
+            <!-- 3rd classes (introduction, projects, etc.) are for the correct operation of the 
+            highlight navigation menu in script.js -->
         </header>
         
+        <!-- Main information area -->
         <div class="about visible" id="about">
-
             <div class="about-details">
                 <img class="photo" src="photo.jpg" width="200" heigth="200"><br>
                 Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle 
@@ -35,6 +42,7 @@
             <button onclick="showHide()" class="about-btn" id="about_btn">&lt;&lt;</button>
         </div>
 
+        <!-- Site sections -->
         <section class="introduction-section">
             <div class="section-header" id="introduction">
                 Introduction
@@ -172,6 +180,7 @@
             </div>
         </section>
     </div>
+
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+/* Common section styles */
+section {
+    min-height: calc(100vh - 60px);
+}
+
+.section-header {
+    margin: -60px 0 0 25px;
+    border-bottom: 3px solid var(--main);
+    width: fit-content;
+    padding: 90px 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--main);
+}
+
+.section-container {
+    margin: 50px auto 0;
+    width: 90%;
+}
+
+
+/* Introduction section styles */
+.introduction-section {
+    margin-top: 60px;
+}
+
+
+/* Projects section styles */
+.project {
+    overflow: hidden;
+    transition: height 0.7s ease;
+    height: 35px;
+}
+
+.project.extended {
+    height: 150px;
+}
+
+.project-name {
+    width: fit-content;
+    font-weight: bold;
+}
+
+.project-name:hover {
+    cursor: pointer;
+}
+
+.project.extended > .project-name {
+    color: var(--main);
+}
+
+.extend-btn {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.project-name:hover .extend-btn {
+    transform: scale(1.2);
+    transition: transform .1s ease-in-out;
+}
+
+.project-details {
+    margin: 15px 2%;
+    width: 96%;
+}
