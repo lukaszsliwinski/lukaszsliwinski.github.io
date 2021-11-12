@@ -52,13 +52,13 @@ body {
 
 .wider {
     margin-left: 30px;
-    width: calc(100vw - 30px);
+    width: calc(100vw - 60px);
     transition: all 0.7s ease;
 }
 
 .narrower {
     margin-left: 430px;
-    width: calc(100vw - 430px);
+    width: calc(100vw - 460px);
     transition: all 0.7s ease;
 }
 
@@ -85,7 +85,8 @@ body {
 }
 
 .nav-btn:hover {
-    color: var(--main);
+    /* color: var(--main); */
+    text-decoration: underline;
 }
 
 .active {
@@ -106,6 +107,7 @@ body {
 }
 
 .photo {
+    border: 5px solid var(--main);
     border-radius: 50%;
 }
 
@@ -150,7 +152,7 @@ section {
     min-height: calc(100vh - 60px);
 }
 
-.introduction {
+.introduction-section {
     margin-top: 60px;
 }
 
@@ -159,8 +161,9 @@ section {
     padding: 90px 10px 0;
     width: fit-content;
     font-size: 25px;
+    font-weight: bold;
     color: var(--main);
-    border-bottom: 1px solid var(--main);
+    border-bottom: 3px solid var(--main);
 }
 
 .section-container {
@@ -192,5 +195,6 @@ section {
 
 
 .project.extended > .project-name {
-    color: var(--main)
+    color: var(--main);
+    text-decoration: underline;
 }

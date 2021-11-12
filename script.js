@@ -18,19 +18,6 @@ function showHide() {
 };
 
 
-jQuery('.nav-btn').click(function(){
-    if ( jQuery(this).hasClass('active') )
-    {
-        jQuery('.header').removeClass('active')
-    }
-    else 
-    {
-        jQuery('.header .nav-btn').removeClass('active');
-        jQuery(this).addClass('active');
-    }
-});
-
-
 jQuery('.project .project-name').click(function(){ 
 	if ( jQuery(this).parent().hasClass('extended') ) 
 	{
@@ -41,4 +28,25 @@ jQuery('.project .project-name').click(function(){
         jQuery('.project').removeClass('extended');
         jQuery(this).parent().addClass('extended');
 	}
+});
+
+
+const sections = document.querySelectorAll('.section-header');
+const navLi = document.querySelectorAll('.header a');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach( section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - sectionHeight / 3)) {
+            current = section.getAttribute('id');
+        };
+    });
+    navLi.forEach( a => {
+        a.classList.remove('active');
+        if (a.classList.contains(current)) {
+            a.classList.add('active');
+        };
+    });
 });
