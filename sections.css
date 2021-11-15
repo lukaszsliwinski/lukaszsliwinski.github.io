@@ -8,8 +8,8 @@ section {
     /* border-bottom: 3px solid var(--main); */
     width: fit-content;
     padding: 90px 10px 0;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 45px;
+    font-weight: 600;
     color: var(--main);
     font-variant: small-caps;
     display: flex;
@@ -18,7 +18,7 @@ section {
 }
 
 .section-header-icon {
-    font-size: 40px;
+    font-size: 60px;
     margin-right: 15px;
 }
 
@@ -39,7 +39,7 @@ section {
     overflow: hidden;
     transition: max-height 0.5s ease;
     height: fit-content;
-    max-height: 35px;
+    max-height: 45px;
 }
 
 .project.extended {
@@ -48,8 +48,8 @@ section {
 
 .project-name {
     width: fit-content;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 600;
     font-variant: small-caps;
 }
 
@@ -82,6 +82,7 @@ section {
 
 .project-details-header {
     margin-bottom: 15px;
+    font-size: 20px;
     font-weight: 500;
     width: 100%;
     text-align: center;
