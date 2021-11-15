@@ -19,6 +19,7 @@
     text-align: center;
     color: var(--white);
     text-decoration: none;
+    font-variant: small-caps;
 }
 
 .underline {
