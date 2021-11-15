@@ -28,16 +28,18 @@ section {
 /* Projects section styles */
 .project {
     overflow: hidden;
-    transition: height 0.7s ease;
-    height: 35px;
+    transition: max-height 0.5s ease;
+    height: fit-content;
+    max-height: 35px;
 }
 
 .project.extended {
-    height: 150px;
+    max-height: 800px;   /*ustalić wartość po zapełnieniu wszystkich sekcji */
 }
 
 .project-name {
     width: fit-content;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -62,4 +64,66 @@ section {
 .project-details {
     margin: 15px 2%;
     width: 96%;
+    padding: 1%;
+    border: 2px solid var(--main);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.project-details-header {
+    /* font-size: 16px; */
+    margin-bottom: 15px;
+    font-weight: 500;
+    width: 100%;
+    /* text-transform: capitalize; */
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.project-details-content {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.project-details-screens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+.project-screen:hover {
+    transform: scale(1.02);
+    transition: transform .2s linear;
+    cursor: zoom-in;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+}
+
+.project-details-technologies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.technology-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.technology-name {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
 }

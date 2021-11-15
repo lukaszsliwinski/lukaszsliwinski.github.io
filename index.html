@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Łukasz Śliwiński - portfolio</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="all.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="about.css">
     <link rel="stylesheet" type="text/css" href="sections.css">
+
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
 </head>
 <body>
     <div class="main narrower" id="main">
 
         <!-- Navigation menu -->
         <header class="header">
-            <a class="nav-btn underline introduction active" href="#introduction">Introduction</a>
-            <a class="nav-btn underline projects" href="#projects">Projects</a>
-            <a class="nav-btn underline work" href="#work">Work</a>
-            <a class="nav-btn underline education" href="#education">Education</a>
-            <a class="nav-btn underline contact" href="#contact">Contact</a>
+            <a class="nav-btn underline introduction active" href="#introduction">O mnie</a>
+            <a class="nav-btn underline projects" href="#projects">Projekty</a>
+            <!-- <a class="nav-btn underline work" href="#work">Doświadczenie</a>
+            <a class="nav-btn underline education" href="#education">Wykształcenie</a> -->
+            <a class="nav-btn underline contact" href="#contact">Kontakt</a>
             <!-- 3rd classes (introduction, projects, etc.) are for the correct operation of the 
             highlight navigation menu in script.js -->
         </header>
@@ -44,7 +48,7 @@
         <!-- Site sections -->
         <section class="introduction-section">
             <div class="section-header" id="introduction">
-                Introduction
+                O mnie
             </div>
             <div class="section-container">
                 Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle 
@@ -60,22 +64,57 @@
 
         <section class="projects-section">
             <div class="section-header" id="projects">
-                Projects
+                Projekty
             </div>
             <ul class="section-container">
                 <li class="project">
                     <button onclick="showHideProject('project1')" class="project-name" id="project1">
-                        Project1<div class="extend-btn">&#129095;</div>
+                        English Dictionary<div class="extend-btn">&#129095;</div>
                     </button>
                     <div class="project-details">
-                        Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle 
-                        poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza 
-                        do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany 
-                        przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował 
-                        się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających 
-                        fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum 
-                        oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, 
-                        jak Aldus PageMaker
+                        <h1 class="project-details-header">OPIS PROGRAMU</h1>
+                        <p class="project-details-content">
+                            &emsp;Aplikacja wspomagająca naukę słówek angielskiego. 
+                            Użytkownik wybiera ile słówek chce przetłumaczyć. 
+                            Program losuje z bazy danych słówka i podaje pokolei użytkownikowi do przetłumaczenia. 
+                            Za każde poprawne tłumaczenie użytkownik uzyskuje jeden punkt. 
+                            Na końcu program podaje sumę punktów. 
+                            Baza słówek znajduje się w pliku csv i może być dowolnie modyfikowana.
+                        </p>
+                        <ul class="project-details-screens">
+                            <li>
+                                <a data-lightbox="mygallery" href="screens/english1.png">
+                                    <img class="project-screen" src="screens/english1.png" height="250">
+                                </a>
+                            </li>
+                            <li class="project-screen">
+                                <a data-lightbox="mygallery" href="screens/english2.png">
+                                    <img class="project-screen" src="screens/english2.png" height="250">
+                                </a>
+
+                            </li>
+                            <li class="project-screen">
+                                <a data-lightbox="mygallery" href="screens/english3.png">
+                                    <img class="project-screen" src="screens/english3.png" height="250">
+                                </a>
+                            </li>
+                            <li class="project-screen">
+                                <a data-lightbox="mygallery" href="screens/english4.png">
+                                    <img class="project-screen" src="screens/english4.png" height="250">
+                                </a>
+                            </li>
+                        </ul>
+                        <h1 class="project-details-header">CEL DYDAKTYCZNY</h1>
+                        <p class="project-details-content">
+                            &emsp;Program napisany w celu nabycia praktycznych umiejętności programowania w języku Python, z wykorzystaniem frameworka Kivy. 
+                            W pierwszej wersji program mógł być uruchamiany jedynie w konsoli, następnie w ramach dalszej nauki został dopisany interface GUI. 
+                            Finalna wersja została przeprojektowania aby utrwalić wiedzę z zakresu programowania z wykorzystaniem Kivy.
+                        </p>
+                        <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
+                        <ul class="project-details-technologies">
+                            <li class="technology-icon"><i class="fab fa-python"></i><p class="technology-name">PYTHON</p></li>
+                            <li class="technology-icon"><img class="kivy-icon" src="kivy.png" width="50" height="50"><br><p class="technology-name">KIVY</p></li>
+                        </ul>
                     </div>
                 </li>
                 <li class="project">
@@ -141,9 +180,9 @@
             </ul>
         </section>
 
-        <section class="work-section">
+        <!-- <section class="work-section">
             <div class="section-header" id="work">
-                Work
+                Doświadczenie zawodowe
             </div>
             <div class="section-container">
                 Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle 
@@ -159,7 +198,7 @@
 
         <section class="education-section">
             <div class="section-header" id="education">
-                Education
+                Wykształcenie
             </div>
             <div class="section-container">
                 Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle 
@@ -171,11 +210,11 @@
                 oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, 
                 jak Aldus PageMaker
             </div>
-        </section>
+        </section> -->
 
         <section class="contact-section">
             <div class="section-header" id="contact">
-                Contact
+                Kontakt
             </div>
             <div class="section-container">
                 Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle 
