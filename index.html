@@ -113,7 +113,10 @@
                         <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
                         <ul class="project-details-technologies">
                             <li class="technology-icon"><i class="fab fa-python"></i><p class="technology-name">PYTHON</p></li>
-                            <li class="technology-icon"><img class="kivy-icon" src="images/kivy.png" width="50" height="50"><br><p class="technology-name">KIVY</p></li>
+                            <li class="technology-icon">
+                                <img class="kivy-icon" src="images/kivy.png" width="50" height="50"><br>
+                                <p class="technology-name">KIVY</p>
+                            </li>
                         </ul>
                         <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
                         <div class="github-link">
@@ -129,62 +132,265 @@
                 </li>
                 <li class="project">
                     <button onclick="showHideProject('project2')" class="project-name" id="project2">
-                        Project2<div class="extend-btn">&#129095;</div>
+                        Cooking Blog<div class="extend-btn">&#129095;</div>
                     </button>
                     <div class="project-details">
-                        Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle 
-                        poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza 
-                        do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany 
-                        przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował 
-                        się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających 
-                        fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum 
-                        oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, 
-                        jak Aldus PageMaker
+                        <h1 class="project-details-header">OPIS PROGRAMU</h1>
+                        <p class="project-details-content">
+                            &emsp;Aplikacja internetowa do przechowywania przepisów kulinarnych w formie bloga. 
+                            Po utworzeniu konta i zalogowaniu do panelu administratorskiego, użytkownik może dodawać przepisy. 
+                            W ramach przepisu dodawana jest nazwa, kraj, kategoria posiłku, zdjęcie, informacja czy danie jest 
+                            dietetyczne, opis przygotowania, lista składników, lista przypraw. Przepisy wyświetlane są na 
+                            stronie głównej w formie kart. Po kliknięciu w kartę wyświetlane są szczegóły. Dania można filtrować 
+                            po krajach, kategoriach oraz dietetycznych poprzez menu z lewej strony. W nagłówku strony znajduje się 
+                            wyszukiwarka po nazwie dania.
+                        </p>
+                        <ul class="project-details-screens">
+                            <li>
+                                <a data-lightbox="mygallery" href="screens/cooking1.png">
+                                    <img class="project-screen" src="screens/cooking1.png" height="150">
+                                </a>
+                            </li>
+                            <li class="project-screen">
+                                <a data-lightbox="mygallery" href="screens/cooking2.png">
+                                    <img class="project-screen" src="screens/cooking2.png" height="150">
+                                </a>
+
+                            </li>
+                            <li class="project-screen">
+                                <a data-lightbox="mygallery" href="screens/cooking3.png">
+                                    <img class="project-screen" src="screens/cooking3.png" height="150">
+                                </a>
+                            </li>
+                            <li class="project-screen">
+                                <a data-lightbox="mygallery" href="screens/cooking4.png">
+                                    <img class="project-screen" src="screens/cooking4.png" height="150">
+                                </a>
+                            </li>
+                        </ul>
+                        <h1 class="project-details-header">CEL DYDAKTYCZNY</h1>
+                        <p class="project-details-content">
+                            &emsp;Celem było rozpoczęcie nauki w obszarze aplikacji internetowych z wykorzystaniem języka Python. 
+                            Aplikacja napisana w oparciu o tutorial zamieszczony w dokumentacji Django. W czasie pisania aplikacji 
+                            poznałem podstawy HTML5 i CSS3, podstawy baz danych na przykładzie bazy SQLite oraz budowę kompletnej 
+                            aplikacji internetowej w oparciu o Django. Layout aplikacji był kilkukrotnie modyfikowany, równolegle 
+                            z nabywaniem nowej wiedzy. Po poznaniu podstaw języka JavaScript, zostało dodane nemu harmonijkowe z 
+                            jego wykorzystaniem. Strona została dopasowana do różnych rozdzielczośći monitorów z zastosowaniem 
+                            techniki Responsive Web Design.
+                        </p>
+                        <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
+                        <ul class="project-details-technologies">
+                            <li class="technology-icon"><i class="fab fa-python"></i><p class="technology-name">PYTHON</p></li>
+                            <li class="technology-icon">
+                                <img class="tech-icon-img" src="images/django.jpg" width="50" height="50"><br>
+                                <p class="technology-name">DJANGO</p>
+                            </li>
+                            <li class="technology-icon">
+                                <img class="tech-icon-img" src="images/sqlite.png" width="50" height="50"><br>
+                                <p class="technology-name">SQLITE</p>
+                            </li>
+                            <li class="technology-icon"><i class="fab fa-html5"></i><p class="technology-name">HTML5</p></li>
+                            <li class="technology-icon"><i class="fab fa-css3-alt"></i><p class="technology-name">CSS3</p></li>
+                            <li class="technology-icon"><i class="fab fa-js-square"></i><p class="technology-name">JAVASCRIPT</p></li>
+                            <li class="technology-icon"><i class="fas fa-mobile-alt"></i><p class="technology-name">RWD</p></li>
+                           
+                        </ul>
+                        <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
+                        <div class="github-link">
+                            <a href="https://github.com/lukaszsliwinski/cooking_blog"
+                            class="technology-icon"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <i class="fab fa-github-square"></i>
+                                <p class="technology-name">GITHUB</p>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <li class="project">
                     <button onclick="showHideProject('project3')" class="project-name" id="project3">
-                        Project3<div class="extend-btn">&#129095;</div>
+                        Task Planner<div class="extend-btn">&#129095;</div>
                     </button>
                     <div class="project-details">
-                        Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle 
-                        poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza 
-                        do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany 
-                        przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował 
-                        się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających 
-                        fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum 
-                        oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, 
-                        jak Aldus PageMaker
+                        <h1 class="project-details-header">OPIS PROGRAMU</h1>
+                        <p class="project-details-content">
+                            &emsp;Aplikacja internetowa do zarządzania zadaniami do wykonania.
+                            Po utworzeniu konta i zalogowaniu można w aplikacji dodawać zadania 
+                            wraz z terminem wykonania. Można utworzyć więcej niż jedno konto, każdy 
+                            użytkownik ma wtedy dostęp tylko do swoich zadań. Aplikacja posiada 
+                            własny kreator zadań, dzięki czemu nie ma konieczności logowania się 
+                            do wbudowanego panelu administratorskiego Django - wszystkie zadania 
+                            można dodać w aplikacji. Strona główna podzielona jest na 4 kolumny. 
+                            3 pierwsze filtrują zadania po datach (opóźnione, dzisiejsze, przyszłe). 
+                            Ostatnia kolumna zawiera zadania oznaczone jako zakończone.
+                            W lewym górnym rogu znajduje się wyszukiwarka po tytule zadania.
+                        </p>
+                        <ul class="project-details-screens">
+                            <li>
+                                <a data-lightbox="mygallery" href="screens/task1.png">
+                                    <img class="project-screen" src="screens/task1.png" height="150">
+                                </a>
+                            </li>
+                            <li class="project-screen">
+                                <a data-lightbox="mygallery" href="screens/task2.png">
+                                    <img class="project-screen" src="screens/task2.png" height="150">
+                                </a>
+
+                            </li>
+                            <li class="project-screen">
+                                <a data-lightbox="mygallery" href="screens/task3.png">
+                                    <img class="project-screen" src="screens/task3.png" height="150">
+                                </a>
+                            </li>
+                            <li class="project-screen">
+                                <a data-lightbox="mygallery" href="screens/task4.png">
+                                    <img class="project-screen" src="screens/task4.png" height="150">
+                                </a>
+                            </li>
+                        </ul>
+                        <h1 class="project-details-header">CEL DYDAKTYCZNY</h1>
+                        <p class="project-details-content">
+                            &emsp;Celem było utrwalenie oraz poszerzenie wiedzy z zakresu programowania z wykorzystaniem 
+                            frameworka Django. Wykorzystano aplikację z tutorialu - https://www.youtube.com/watch?v=llbtoQTt4qw 
+                            - która została zmodyfikowana i rozszerzona o kolumny do sortowania zadań po dacie. W przeciwieństwie 
+                            do poprzedniej aplikacji, widoki zostały napisane z wykorzystaniem technologii Class Based Views.
+                        </p>
+                        <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
+                        <ul class="project-details-technologies">
+                            <li class="technology-icon"><i class="fab fa-python"></i><p class="technology-name">PYTHON</p></li>
+                            <li class="technology-icon">
+                                <img class="tech-icon-img" src="images/django.jpg" width="50" height="50"><br>
+                                <p class="technology-name">DJANGO</p>
+                            </li>
+                            <li class="technology-icon">
+                                <img class="tech-icon-img" src="images/sqlite.png" width="50" height="50"><br>
+                                <p class="technology-name">SQLITE</p>
+                            </li>
+                            <li class="technology-icon"><i class="fab fa-html5"></i><p class="technology-name">HTML5</p></li>
+                            <li class="technology-icon"><i class="fab fa-css3-alt"></i><p class="technology-name">CSS3</p></li>
+                        </ul>
+                        <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
+                        <div class="github-link">
+                            <a href="https://github.com/lukaszsliwinski/task_planner"
+                            class="technology-icon"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <i class="fab fa-github-square"></i>
+                                <p class="technology-name">GITHUB</p>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <li class="project">
                     <button onclick="showHideProject('project4')" class="project-name" id="project4">
-                        Project4<div class="extend-btn">&#129095;</div>
+                        Simply Metronome<div class="extend-btn">&#129095;</div>
                     </button>
                     <div class="project-details">
-                        Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle 
-                        poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza 
-                        do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany 
-                        przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował 
-                        się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających 
-                        fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum 
-                        oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, 
-                        jak Aldus PageMaker
+                        <h1 class="project-details-header">OPIS PROGRAMU</h1>
+                        <p class="project-details-content">
+                            &emsp;Aplikacja internetowa symulująca działanie prostego metronomu. 
+                            W programie można ustawić tempo oraz metrum. W zależności od ilości 
+                            uderzeń na minutę (bpm), program podaje włoską nazwę tempa.
+                            W aplikacji wykorzystano gotowy timer z tutorialu: https://www.youtube.com/watch?v=x8PBWobv6NY
+                        </p>
+                        <ul class="project-details-screens">
+                            <li>
+                                <a data-lightbox="mygallery" href="screens/metronome1.png">
+                                    <img class="project-screen" src="screens/metronome1.png" height="150">
+                                </a>
+                            </li>
+                            <li class="project-screen">
+                                <a data-lightbox="mygallery" href="screens/metronome2.png">
+                                    <img class="project-screen" src="screens/metronome2.png" height="150">
+                                </a>
+
+                            </li>
+                        </ul>
+                        <h1 class="project-details-header">CEL DYDAKTYCZNY</h1>
+                        <p class="project-details-content">
+                            &emsp;Program został napisany w celu opanowania podstaw języka JavaScript.
+                        </p>
+                        <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
+                        <ul class="project-details-technologies">
+                            <li class="technology-icon"><i class="fab fa-html5"></i><p class="technology-name">HTML5</p></li>
+                            <li class="technology-icon"><i class="fab fa-css3-alt"></i><p class="technology-name">CSS3</p></li>
+                            <li class="technology-icon"><i class="fab fa-js-square"></i><p class="technology-name">JAVASCRIPT</p></li>
+                        </ul>
+                        <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
+                        <div class="github-link">
+                            <a href="https://github.com/lukaszsliwinski/simply_metronome"
+                            class="technology-icon"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <i class="fab fa-github-square"></i>
+                                <p class="technology-name">GITHUB</p>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <li class="project">
                     <button onclick="showHideProject('project5')" class="project-name" id="project5">
-                        Project5<span class="extend-btn">&#129095;</span>
+                        Music Player<span class="extend-btn">&#129095;</span>
                     </button>
                     <div class="project-details">
-                        Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle 
-                        poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza 
-                        do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany 
-                        przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował 
-                        się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających 
-                        fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum 
-                        oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, 
-                        jak Aldus PageMaker
+                        <h1 class="project-details-header">OPIS PROGRAMU</h1>
+                        <p class="project-details-content">
+                            &emsp;Aplikacja internetowa pozwalająca na przesyłanie utworów do bazy danych i odtwarzania w przeglądarce. 
+                            Po utworzeniu konta i zalogowaniu do panelu administratorskiego, użytkownik może dodawać utwory. 
+                            W ramach utworu dodawany jest tytuł, wykonawca, okładka oraz plik dźwiękowy. Na stronie głównej 
+                            wyświetlony jest odtwarzać wraz z playlistą wszystkich dodanych utworów. Odtwarzacz pozwala na 
+                            odtworzenie utworu, przejście do następnęgo/poprzedniego, wybranie dowolnego utworu z playlisty 
+                            oraz przewijanie przy pomocy suwaka. W trakcie odtwarzania wyświetlany jest tytuł utworu, wykonawca 
+                            oraz okładka. Po zakończeniu odtwarzania utworu, automatycznie odtwarzany jest następny z playlisty. 
+                            Po zakończeniu ostatniego utworu odtwarzacz jest zatrzymywany.
+                        </p>
+                        <ul class="project-details-screens">
+                            <li>
+                                <a data-lightbox="mygallery" href="screens/player1.png">
+                                    <img class="project-screen" src="screens/player1.png" height="150">
+                                </a>
+                            </li>
+                            <li class="project-screen">
+                                <a data-lightbox="mygallery" href="screens/player2.png">
+                                    <img class="project-screen" src="screens/player2.png" height="150">
+                                </a>
+
+                            </li>
+                        </ul>
+                        <h1 class="project-details-header">CEL DYDAKTYCZNY</h1>
+                        <p class="project-details-content">
+                            &emsp;Celem było wykorzystanie dotychczas zdobytej wiedzy z zakresu programowania w Django 
+                            oraz JavaScript i połączenie obu technologii. Backend aplikacji wykorzystuje Django do 
+                            przechowywania utworów w bazie danych. Baza danych jest przekazywana w postaci ciągu znaków 
+                            do szablonu. Funkcja napisana w JavaScript konwertuje przesłany ciąg znaków na listę obiektów 
+                            przechowujących dane o utworach. Z przygotowanej listy korzysta odtwarzacz na stronie głównej 
+                            napisany przy użyciu JavaScript.
+                        </p>
+                        <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
+                        <ul class="project-details-technologies">
+                            <li class="technology-icon"><i class="fab fa-python"></i><p class="technology-name">PYTHON</p></li>
+                            <li class="technology-icon">
+                                <img class="tech-icon-img" src="images/django.jpg" width="50" height="50"><br>
+                                <p class="technology-name">DJANGO</p>
+                            </li>
+                            <li class="technology-icon">
+                                <img class="tech-icon-img" src="images/sqlite.png" width="50" height="50"><br>
+                                <p class="technology-name">SQLITE</p>
+                            </li>
+                            <li class="technology-icon"><i class="fab fa-html5"></i><p class="technology-name">HTML5</p></li>
+                            <li class="technology-icon"><i class="fab fa-css3-alt"></i><p class="technology-name">CSS3</p></li>
+                            <li class="technology-icon"><i class="fab fa-js-square"></i><p class="technology-name">JAVASCRIPT</p></li>
+                        </ul>
+                        <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
+                        <div class="github-link">
+                            <a href="https://github.com/lukaszsliwinski/music_player"
+                            class="technology-icon"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <i class="fab fa-github-square"></i>
+                                <p class="technology-name">GITHUB</p>
+                            </a>
+                        </div>
                     </div>
                 </li>
             </ul>
