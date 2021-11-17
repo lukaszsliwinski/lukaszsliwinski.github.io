@@ -5,7 +5,6 @@ section {
 
 .section-header {
     margin: -60px 0 0 25px;
-    /* border-bottom: 3px solid var(--main); */
     width: fit-content;
     padding: 90px 10px 0;
     font-size: 45px;
@@ -43,7 +42,7 @@ section {
 }
 
 .project.extended {
-    max-height: 800px;   /*ustalić wartość po zapełnieniu wszystkich sekcji */
+    max-height: 1000px;   /*ustalić wartość po zapełnieniu wszystkich sekcji */
 }
 
 .project-name {
@@ -73,28 +72,26 @@ section {
 
 .project-details {
     margin: 15px 2%;
-    width: 96%;
-    padding: 1%;
     border: 2px solid var(--main);
     border-radius: 10px;
     box-sizing: border-box;
+    width: 96%;
+    padding: 1%;
 }
 
 .project-details-header {
-    margin-bottom: 15px;
+    margin-top: 25px;
+    width: 100%;
     font-size: 20px;
     font-weight: 500;
-    width: 100%;
     text-align: center;
     text-decoration: underline;
 }
 
 .project-details-content {
+    margin: 15px 10px 0;
     text-align: justify;
     text-justify: inter-word;
-    margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .project-details-screens {
@@ -103,16 +100,13 @@ section {
     flex-wrap: wrap;
     align-items: space-between;
     justify-content: space-around;
-    margin-bottom: 30px;
-    margin-top: -10px;
+    margin-top: 20px;
 }
 
 .project-screen:hover {
     transform: scale(1.02);
     transition: transform .2s linear;
     cursor: zoom-in;
-    cursor: -webkit-zoom-in;
-    cursor: -moz-zoom-in;
 }
 
 .project-details-technologies {
@@ -132,7 +126,18 @@ section {
 
 .technology-name {
     display: block;
+    margin-left: 5px;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 5px;
+}
+
+.github-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-link a:hover {
+    color: var(--main);
 }

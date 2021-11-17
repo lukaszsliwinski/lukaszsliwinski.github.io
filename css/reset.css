@@ -4,19 +4,7 @@
     padding: 0;
 }
 
-button {
-    display: block;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    background: none;
-	cursor: pointer;
-	font: inherit;
-}
-
-h1 {
-    margin: 0;
-	padding: 0;
+h1, a, ul {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -25,6 +13,17 @@ h1 {
 
 ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+}
+
+a, a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+    display: block;
+    border: 0;
+    background: none;
+	cursor: pointer;
+	font: inherit;
 }
