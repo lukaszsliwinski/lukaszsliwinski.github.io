@@ -1,7 +1,7 @@
 /* Main information area styles */
 .about {
     position: fixed;
-    z-index: 20;
+    z-index: 10;
     top: 0;
     justify-content: space-between;
     align-items: center;
@@ -21,24 +21,8 @@
     transition: left 0.7s ease;
 }
 
-.about-details {
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    margin: 0 50px;
-    font-size: 14px;
-    text-align: justify;
-    color: var(--white);
-}
-
-.photo {
-    margin-bottom: 50px;
-    border: 5px solid var(--main);
-    border-radius: 50%;
-}
-
 .about-btn {
-    width: 100%;
+    width: 30px;
     height: 100px;
     padding-right: 4px;
     background-color: black;
@@ -54,4 +38,71 @@
     transition: all 0.2s ease-in-out;
     background-color: var(--main);
     color: black;
+}
+
+.about-details {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin: 0 50px;
+    width: 100%;
+    background-color: black;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.photo {
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.about-header {
+    margin-top: 15px;
+    border-bottom: 1px solid var(--main);
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    color: var(--main);
+}
+
+.about-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.about-technology-icon {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    margin: 5px 10px;
+    font-size: 22px;
+}
+
+.about-technology-name {
+    display: block;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.about-link-icon {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    margin: 5px 10px;
+    font-size: 22px;
+}
+
+.about-link-icon:hover {
+    color: var(--main); 
+}
+
+.about-link-name {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 18px;
 }
