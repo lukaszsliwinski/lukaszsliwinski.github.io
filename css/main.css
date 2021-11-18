@@ -11,7 +11,22 @@
 
 /* Main page styles */
 html {
+    scrollbar-color: black var(--main);
+    scrollbar-width: thin;
     scroll-behavior: smooth;
+}
+
+/* scrollbar style */
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--main);
 }
 
 body {

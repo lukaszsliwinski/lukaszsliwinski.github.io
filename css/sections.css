@@ -65,6 +65,9 @@ section {
 }
 
 .project-details {
+    overflow-y: scroll;
+    scrollbar-color: black transparent;
+    scrollbar-width: thin;
     margin: 15px 2%;
     border: 2px solid var(--main);
     border-radius: 10px;
@@ -73,8 +76,19 @@ section {
     height: 550px;  /* do ustalenia przy ustawianiu responsywności */
                     /* następnie należy dopasować height w .project.extended */
     padding: 1%;
-    /*  */
-    overflow-y: scroll;
+}
+
+.project-details::-webkit-scrollbar {
+    width: 8px;
+}
+
+.project-details::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: black;
+}
+
+.project-details::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .project-details-header {
