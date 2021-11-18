@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
     <link rel="stylesheet" type="text/css" href="css/sections.css">
 
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
@@ -32,71 +32,71 @@
             </div>
         </header>
         
-        <!-- Main information area -->
-        <div class="about visible" id="about">
-            <div class="about-details">
+        <!-- General information area -->
+        <div class="general visible" id="general">
+            <div class="general-details">
                 <img class="photo" src="images/photo.jpg" width="180" heigth="180">
-                <h1 class="about-header">Languages</h1>
-                <ul class="about-list">
-                    <li class="about-technology-icon">
+                <h1 class="general-header">Languages</h1>
+                <ul class="general-list">
+                    <li class="general-technology-icon">
                         <i class="fab fa-python"></i>
-                        <p class="about-technology-name">PYTHON</p>
+                        <p class="general-technology-name">PYTHON</p>
                     </li>
-                    <li class="about-technology-icon">
+                    <li class="general-technology-icon">
                         <i class="fab fa-js-square"></i>
-                        <p class="about-technology-name">JAVASCRIPT</p>
+                        <p class="general-technology-name">JAVASCRIPT</p>
                     </li>
                 </ul>
-                <h1 class="about-header">Frameworks</h1>
-                <ul class="about-list">
-                    <li class="about-technology-icon">
+                <h1 class="general-header">Frameworks</h1>
+                <ul class="general-list">
+                    <li class="general-technology-icon">
                         <img class="kivy-icon" src="images/kivy.png" width="22" height="22">
-                        <p class="about-technology-name">KIVY</p>
+                        <p class="general-technology-name">KIVY</p>
                     </li>
-                    <li class="about-technology-icon">
+                    <li class="general-technology-icon">
                         <img class="tech-icon-img" src="images/django.jpg" width="22" height="22">
-                        <p class="about-technology-name">DJANGO</p>
+                        <p class="general-technology-name">DJANGO</p>
                     </li>
                 </ul>
-                <h1 class="about-header">Other</h1>
-                <ul class="about-list">
-                    <li class="about-technology-icon">
+                <h1 class="general-header">Other</h1>
+                <ul class="general-list">
+                    <li class="general-technology-icon">
                         <i class="fab fa-html5"></i>
-                        <p class="about-technology-name">HTML5</p>
+                        <p class="general-technology-name">HTML5</p>
                     </li>
-                    <li class="about-technology-icon">
+                    <li class="general-technology-icon">
                         <i class="fab fa-css3-alt"></i>
-                        <p class="about-technology-name">CSS3</p>
+                        <p class="general-technology-name">CSS3</p>
                     </li>
-                    <li class="about-technology-icon">
+                    <li class="general-technology-icon">
                         <i class="fas fa-mobile-alt"></i>
-                        <p class="about-technology-name">RESPONSIVE WEB DESIGN</p>
+                        <p class="general-technology-name">RESPONSIVE WEB DESIGN</p>
                     </li>
-                    <li class="about-technology-icon">
+                    <li class="general-technology-icon">
                         <img class="tech-icon-img" src="images/sqlite-w.png" width="22" height="22">
-                        <p class="about-technology-name">SQLITE</p>
+                        <p class="general-technology-name">SQLITE</p>
                     </li>
-                    <li class="about-technology-icon">
+                    <li class="general-technology-icon">
                         <i class="fab fa-git-alt"></i>
-                        <p class="about-technology-name">GIT</p>
+                        <p class="general-technology-name">GIT</p>
                     </li>
                 </ul>
-                <h1 class="about-header">Links</h1>
-                <ul class="about-list">
-                    <li class="about-link-icon">
+                <h1 class="general-header">Links</h1>
+                <ul class="general-list">
+                    <li class="general-link-icon">
                         <a href="https://github.com/lukaszsliwinski/"
                         target="_blank"
                         rel="noopener noreferrer">
                             <i class="fab fa-github-square"></i>
-                            <p class="about-link-name">github</p>
+                            <p class="general-link-name">github</p>
                         </a>
                     </li>
-                    <li class="about-link-icon">
-                        <a href="#"><i class="fab fa-linkedin"></i><p class="about-link-name">linkedin</p></a>
+                    <li class="general-link-icon">
+                        <a href="#"><i class="fab fa-linkedin"></i><p class="general-link-name">linkedin</p></a>
                     </li>
                 </ul>
             </div>
-            <button onclick="showHideAbout()" class="about-btn" id="about_btn">&lt;&lt;</button>
+            <button onclick="showHideGeneral()" class="general-btn" id="general_btn">&lt;&lt;</button>
         </div>
 
         <!-- Site sections -->
@@ -167,20 +167,23 @@
                         </p>
                         <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
                         <ul class="project-details-technologies">
-                            <li class="technology-icon"><i class="fab fa-python"></i><p class="technology-name">PYTHON</p></li>
-                            <li class="technology-icon">
-                                <img class="kivy-icon" src="images/kivy.png" width="50" height="50"><br>
-                                <p class="technology-name">KIVY</p>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-python"></i>
+                                <p class="project-technology-name">PYTHON</p>
+                            </li>
+                            <li class="project-technology-icon">
+                                <img class="kivy-icon" src="images/kivy.png" width="50" height="50">
+                                <p class="project-technology-name">KIVY</p>
                             </li>
                         </ul>
                         <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
                         <div class="github-link">
                             <a href="https://github.com/lukaszsliwinski/english_dictionary_kivy"
-                            class="technology-icon"
+                            class="project-technology-icon"
                             target="_blank"
                             rel="noopener noreferrer">
                                 <i class="fab fa-github-square"></i>
-                                <p class="technology-name">GITHUB</p>
+                                <p class="project-technology-name">GITHUB</p>
                             </a>
                         </div>
                     </div>
@@ -235,29 +238,43 @@
                         </p>
                         <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
                         <ul class="project-details-technologies">
-                            <li class="technology-icon"><i class="fab fa-python"></i><p class="technology-name">PYTHON</p></li>
-                            <li class="technology-icon">
-                                <img class="tech-icon-img" src="images/django.jpg" width="50" height="50"><br>
-                                <p class="technology-name">DJANGO</p>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-python"></i>
+                                <p class="project-technology-name">PYTHON</p>
                             </li>
-                            <li class="technology-icon">
-                                <img class="tech-icon-img" src="images/sqlite.png" width="50" height="50"><br>
-                                <p class="technology-name">SQLITE</p>
+                            <li class="project-technology-icon">
+                                <img class="tech-icon-img" src="images/django.jpg" width="50" height="50">
+                                <p class="project-technology-name">DJANGO</p>
                             </li>
-                            <li class="technology-icon"><i class="fab fa-html5"></i><p class="technology-name">HTML5</p></li>
-                            <li class="technology-icon"><i class="fab fa-css3-alt"></i><p class="technology-name">CSS3</p></li>
-                            <li class="technology-icon"><i class="fab fa-js-square"></i><p class="technology-name">JAVASCRIPT</p></li>
-                            <li class="technology-icon"><i class="fas fa-mobile-alt"></i><p class="technology-name">RWD</p></li>
-                           
+                            <li class="project-technology-icon">
+                                <img class="tech-icon-img" src="images/sqlite.png" width="50" height="50">
+                                <p class="project-technology-name">SQLITE</p>
+                            </li>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-html5"></i>
+                                <p class="project-technology-name">HTML5</p>
+                            </li>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-css3-alt"></i>
+                                <p class="project-technology-name">CSS3</p>
+                            </li>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-js-square"></i>
+                                <p class="project-technology-name">JAVASCRIPT</p>
+                            </li>
+                            <li class="project-technology-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p class="project-technology-name">RWD</p>
+                            </li>
                         </ul>
                         <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
                         <div class="github-link">
                             <a href="https://github.com/lukaszsliwinski/cooking_blog"
-                            class="technology-icon"
+                            class="project-technology-icon"
                             target="_blank"
                             rel="noopener noreferrer">
                                 <i class="fab fa-github-square"></i>
-                                <p class="technology-name">GITHUB</p>
+                                <p class="project-technology-name">GITHUB</p>
                             </a>
                         </div>
                     </div>
@@ -312,26 +329,35 @@
                         </p>
                         <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
                         <ul class="project-details-technologies">
-                            <li class="technology-icon"><i class="fab fa-python"></i><p class="technology-name">PYTHON</p></li>
-                            <li class="technology-icon">
-                                <img class="tech-icon-img" src="images/django.jpg" width="50" height="50"><br>
-                                <p class="technology-name">DJANGO</p>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-python"></i>
+                                <p class="project-technology-name">PYTHON</p>
                             </li>
-                            <li class="technology-icon">
-                                <img class="tech-icon-img" src="images/sqlite.png" width="50" height="50"><br>
-                                <p class="technology-name">SQLITE</p>
+                            <li class="project-technology-icon">
+                                <img class="tech-icon-img" src="images/django.jpg" width="50" height="50">
+                                <p class="project-technology-name">DJANGO</p>
                             </li>
-                            <li class="technology-icon"><i class="fab fa-html5"></i><p class="technology-name">HTML5</p></li>
-                            <li class="technology-icon"><i class="fab fa-css3-alt"></i><p class="technology-name">CSS3</p></li>
+                            <li class="project-technology-icon">
+                                <img class="tech-icon-img" src="images/sqlite.png" width="50" height="50">
+                                <p class="project-technology-name">SQLITE</p>
+                            </li>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-html5"></i>
+                                <p class="project-technology-name">HTML5</p>
+                            </li>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-css3-alt"></i>
+                                <p class="project-technology-name">CSS3</p>
+                            </li>
                         </ul>
                         <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
                         <div class="github-link">
                             <a href="https://github.com/lukaszsliwinski/task_planner"
-                            class="technology-icon"
+                            class="project-technology-icon"
                             target="_blank"
                             rel="noopener noreferrer">
                                 <i class="fab fa-github-square"></i>
-                                <p class="technology-name">GITHUB</p>
+                                <p class="project-technology-name">GITHUB</p>
                             </a>
                         </div>
                     </div>
@@ -367,18 +393,27 @@
                         </p>
                         <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
                         <ul class="project-details-technologies">
-                            <li class="technology-icon"><i class="fab fa-html5"></i><p class="technology-name">HTML5</p></li>
-                            <li class="technology-icon"><i class="fab fa-css3-alt"></i><p class="technology-name">CSS3</p></li>
-                            <li class="technology-icon"><i class="fab fa-js-square"></i><p class="technology-name">JAVASCRIPT</p></li>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-html5"></i>
+                                <p class="project-technology-name">HTML5</p>
+                            </li>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-css3-alt"></i>
+                                <p class="project-technology-name">CSS3</p>
+                            </li>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-js-square"></i>
+                                <p class="project-technology-name">JAVASCRIPT</p>
+                            </li>
                         </ul>
                         <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
                         <div class="github-link">
                             <a href="https://github.com/lukaszsliwinski/simply_metronome"
-                            class="technology-icon"
+                            class="project-technology-icon"
                             target="_blank"
                             rel="noopener noreferrer">
                                 <i class="fab fa-github-square"></i>
-                                <p class="technology-name">GITHUB</p>
+                                <p class="project-technology-name">GITHUB</p>
                             </a>
                         </div>
                     </div>
@@ -423,27 +458,39 @@
                         </p>
                         <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
                         <ul class="project-details-technologies">
-                            <li class="technology-icon"><i class="fab fa-python"></i><p class="technology-name">PYTHON</p></li>
-                            <li class="technology-icon">
-                                <img class="tech-icon-img" src="images/django.jpg" width="50" height="50"><br>
-                                <p class="technology-name">DJANGO</p>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-python"></i>
+                                <p class="project-technology-name">PYTHON</p>
                             </li>
-                            <li class="technology-icon">
-                                <img class="tech-icon-img" src="images/sqlite.png" width="50" height="50"><br>
-                                <p class="technology-name">SQLITE</p>
+                            <li class="project-technology-icon">
+                                <img class="tech-icon-img" src="images/django.jpg" width="50" height="50">
+                                <p class="project-technology-name">DJANGO</p>
                             </li>
-                            <li class="technology-icon"><i class="fab fa-html5"></i><p class="technology-name">HTML5</p></li>
-                            <li class="technology-icon"><i class="fab fa-css3-alt"></i><p class="technology-name">CSS3</p></li>
-                            <li class="technology-icon"><i class="fab fa-js-square"></i><p class="technology-name">JAVASCRIPT</p></li>
+                            <li class="project-technology-icon">
+                                <img class="tech-icon-img" src="images/sqlite.png" width="50" height="50">
+                                <p class="project-technology-name">SQLITE</p>
+                            </li>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-html5"></i>
+                                <p class="project-technology-name">HTML5</p>
+                            </li>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-css3-alt"></i>
+                                <p class="project-technology-name">CSS3</p>
+                            </li>
+                            <li class="project-technology-icon">
+                                <i class="fab fa-js-square"></i>
+                                <p class="project-technology-name">JAVASCRIPT</p>
+                            </li>
                         </ul>
                         <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
                         <div class="github-link">
                             <a href="https://github.com/lukaszsliwinski/music_player"
-                            class="technology-icon"
+                            class="project-technology-icon"
                             target="_blank"
                             rel="noopener noreferrer">
                                 <i class="fab fa-github-square"></i>
-                                <p class="technology-name">GITHUB</p>
+                                <p class="project-technology-name">GITHUB</p>
                             </a>
                         </div>
                     </div>

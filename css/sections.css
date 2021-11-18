@@ -129,7 +129,7 @@ section {
     justify-content: center;
 }
 
-.technology-icon {
+.project-technology-icon {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -137,7 +137,7 @@ section {
     margin: 10px;
 }
 
-.technology-name {
+.project-technology-name {
     display: block;
     margin-left: 5px;
     font-size: 18px;

@@ -1,4 +1,4 @@
-const about = document.getElementById('about');
+const general = document.getElementById('general');
 const main = document.getElementById('main');
 
 const sections = document.querySelectorAll('section');
@@ -24,18 +24,19 @@ window.addEventListener('scroll', () => {
 });
 
 
-// function for showing and hiding main information area
-function showHideAbout() {
-    if (about_btn.innerHTML == '&lt;&lt;') {
-        about_btn.innerHTML = '&gt;&gt;';
-        about.classList.remove('visible');
-        about.classList.add('invisible');
+// function for showing and hiding general information area
+function showHideGeneral() {
+    console.log('działa?');
+    if (general_btn.innerHTML == '&lt;&lt;') {
+        general_btn.innerHTML = '&gt;&gt;';
+        general.classList.remove('visible');
+        general.classList.add('invisible');
         main.classList.remove('narrower');
         main.classList.add('wider');
     } else {
-        about_btn.innerHTML = '&lt;&lt;';
-        about.classList.remove('invisible');
-        about.classList.add('visible');
+        general_btn.innerHTML = '&lt;&lt;';
+        general.classList.remove('invisible');
+        general.classList.add('visible');
         main.classList.remove('wider');
         main.classList.add('narrower');
     };
