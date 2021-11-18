@@ -1,5 +1,18 @@
 /* Navigation header styles */
-.header {
+.name {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 65px;
+    font-size: 40px;
+    font-weight: 400;
+    font-variant: small-caps;
+    color: var(--main);
+    letter-spacing: 5px;
+}
+
+
+.menu {
     position: fixed;
     z-index: 20;
     top: 0;
