@@ -106,6 +106,15 @@ section {
     text-justify: inter-word;
 }
 
+.yt-link {
+    text-decoration: underline;
+}
+
+.yt-link:hover {
+    color: var(--main);
+    text-decoration: underline;
+}
+
 .project-details-screens {
     display: flex;
     flex-direction: row;
