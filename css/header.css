@@ -24,6 +24,10 @@
     font-variant: small-caps;
 }
 
+.nav-btn:hover {
+    color: var(--white);
+}
+
 .underline {
     position: relative;
 }
@@ -46,6 +50,10 @@
 }
 
 .active {
+    color: var(--main);
+}
+
+.active:hover {
     color: var(--main);
 }
 

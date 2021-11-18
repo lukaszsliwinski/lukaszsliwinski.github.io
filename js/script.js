@@ -1,8 +1,9 @@
 const about = document.getElementById('about');
 const main = document.getElementById('main');
 
-const sections = document.querySelectorAll('.section-header');
+const sections = document.querySelectorAll('section');
 const navBtns = document.querySelectorAll('.nav-btn');
+const projNames = document.querySelectorAll('.project-name')
 
 
 // highlight navigation menu

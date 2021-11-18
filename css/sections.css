@@ -1,10 +1,10 @@
 /* Common section styles */
 section {
-    min-height: calc(100vh - 60px);
+    min-height: 100vh;
 }
 
 .section-header {
-    margin: -60px 0 0 25px;
+    margin-left: 25px;
     width: fit-content;
     padding: 90px 10px 0;
     font-size: 40px;
@@ -27,22 +27,16 @@ section {
 }
 
 
-/* Introduction section styles */
-.introduction-section {
-    margin-top: 60px;
-}
-
-
 /* Projects section styles */
 .project {
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    transition: height 0.5s ease;
     height: fit-content;
-    max-height: 45px;
+    height: 45px;
 }
 
 .project.extended {
-    max-height: 1000px;   /*ustalić wartość po zapełnieniu wszystkich sekcji */
+    height: 620px;
 }
 
 .project-name {
@@ -76,7 +70,11 @@ section {
     border-radius: 10px;
     box-sizing: border-box;
     width: 96%;
+    height: 550px;  /* do ustalenia przy ustawianiu responsywności */
+                    /* następnie należy dopasować height w .project.extended */
     padding: 1%;
+    /*  */
+    overflow-y: scroll;
 }
 
 .project-details-header {
