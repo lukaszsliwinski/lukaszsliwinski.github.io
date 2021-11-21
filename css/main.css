@@ -78,6 +78,15 @@ section {
 }
 
 .section-container {
-    margin: 50px auto 0;
-    width: 90%;
+    margin: 10% auto 0;
+    width: 85%;
+}
+
+
+/* About section styles */
+.about-data {
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    text-align: justify;
 }
