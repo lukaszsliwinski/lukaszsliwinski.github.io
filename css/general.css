@@ -75,7 +75,7 @@
     display: flex;
 }
 
-.general-technology-icon {
+.general-technology {
     flex-direction: row;
     align-items: center;
     display: flex;
@@ -89,7 +89,7 @@
     font-size: 14px;
 }
 
-.general-link-icon {
+.general-link {
     flex-direction: row;
     align-items: center;
     display: flex;
@@ -97,7 +97,7 @@
     font-size: 22px;
 }
 
-.general-link-icon:hover {
+.general-link:hover {
     color: var(--main); 
 }
 
