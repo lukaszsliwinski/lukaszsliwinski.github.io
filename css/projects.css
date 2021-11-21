@@ -8,7 +8,7 @@
 }
 
 .project.extended {
-    height: 620px;
+    height: 570px;
 }
 
 .project-name {
@@ -37,6 +37,7 @@
 }
 
 .project-details {
+    overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-color: black transparent;
     scrollbar-width: thin;
@@ -45,9 +46,14 @@
     border-radius: 10px;
     box-sizing: border-box;
     width: 96%;
-    height: 550px;  /* do ustalenia przy ustawianiu responsywności */
-                    /* następnie należy dopasować height w .project.extended */
+    height: 500px;
     padding: 1%;
+}
+
+@-moz-document url-prefix() {
+    .project-details {
+        border-radius: 0;
+    }
 }
 
 .project-details::-webkit-scrollbar {
@@ -115,14 +121,19 @@
     align-items: center;
     display: flex;
     margin: 10px;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .project-technology-name {
     display: block;
     margin-left: 5px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
+}
+
+.project-icon-img {
+    width: 35px;
+    height: 35px;
 }
 
 .github-link {

@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/general.css">
     <link rel="stylesheet" type="text/css" href="css/projects.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
     <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
@@ -36,73 +37,86 @@
         <!-- General information area -->
         <div class="general visible" id="general">
             <div class="general-details">
-                <img class="photo" src="images/photo.jpg" width="180" heigth="180">
-                <h1 class="general-header">Languages</h1>
-                <ul class="general-list">
-                    <li class="general-technology">
-                        <i class="fab fa-python"></i>
-                        <p class="general-technology-name">PYTHON</p>
-                    </li>
-                    <li class="general-technology">
-                        <i class="fab fa-js-square"></i>
-                        <p class="general-technology-name">JAVASCRIPT</p>
-                    </li>
-                </ul>
-                <h1 class="general-header">Frameworks</h1>
-                <ul class="general-list">
-                    <li class="general-technology">
-                        <img class="kivy-icon" src="images/kivy.png" width="22" height="22">
-                        <p class="general-technology-name">KIVY</p>
-                    </li>
-                    <li class="general-technology">
-                        <img class="tech-icon-img" src="images/django.jpg" width="22" height="22">
-                        <p class="general-technology-name">DJANGO</p>
-                    </li>
-                </ul>
-                <h1 class="general-header">Other</h1>
-                <ul class="general-list">
-                    <li class="general-technology">
-                        <i class="fab fa-html5"></i>
-                        <p class="general-technology-name">HTML5</p>
-                    </li>
-                    <li class="general-technology">
-                        <i class="fab fa-css3-alt"></i>
-                        <p class="general-technology-name">CSS3</p>
-                    </li>
-                    <li class="general-technology">
-                        <i class="fas fa-mobile-alt"></i>
-                        <p class="general-technology-name">RESPONSIVE WEB DESIGN</p>
-                    </li>
-                    <li class="general-technology">
-                        <img class="tech-icon-img" src="images/sqlite-w.png" width="22" height="22">
-                        <p class="general-technology-name">SQLITE</p>
-                    </li>
-                    <li class="general-technology">
-                        <i class="fab fa-git-alt"></i>
-                        <p class="general-technology-name">GIT</p>
-                    </li>
-                </ul>
-                <h1 class="general-header">Links</h1>
-                <ul class="general-list">
-                    <li>
-                        <a href="https://github.com/lukaszsliwinski/"
-                        class="general-link"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                            <i class="fab fa-github-square"></i>
-                            <p class="general-link-name">github</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/lukaszsliwinski89/"
-                        class="general-link"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                            <i class="fab fa-linkedin"></i>
-                            <p class="general-link-name">linkedin</p>
-                        </a>
-                    </li>
-                </ul>
+                <img class="photo" src="images/photo.jpg">
+
+                <div class="general-wrapper">
+                    <h1 class="general-header">Languages</h1>
+                    <ul class="general-list">
+                        <li class="general-technology">
+                            <i class="fab fa-python"></i>
+                            <p class="general-technology-name">PYTHON</p>
+                        </li>
+                        <li class="general-technology">
+                            <i class="fab fa-js-square"></i>
+                            <p class="general-technology-name">JAVASCRIPT</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="general-wrapper">
+                    <h1 class="general-header">Frameworks</h1>
+                    <ul class="general-list">
+                        <li class="general-technology">
+                            <img class="general-icon-img" src="images/kivy.png">
+                            <p class="general-technology-name">KIVY</p>
+                        </li>
+                        <li class="general-technology">
+                            <img class="general-icon-img" src="images/django.jpg">
+                            <p class="general-technology-name">DJANGO</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="general-wrapper">
+                    <h1 class="general-header">Other</h1>
+                    <ul class="general-list">
+                        <li class="general-technology">
+                            <i class="fab fa-html5"></i>
+                            <p class="general-technology-name">HTML5</p>
+                        </li>
+                        <li class="general-technology">
+                            <i class="fab fa-css3-alt"></i>
+                            <p class="general-technology-name">CSS3</p>
+                        </li>
+                        <li class="general-technology">
+                            <i class="fas fa-mobile-alt"></i>
+                            <p class="general-technology-name">RESPONSIVE WEB DESIGN</p>
+                        </li>
+                        <li class="general-technology">
+                            <img class="general-icon-img" src="images/sqlite-w.png">
+                            <p class="general-technology-name">SQLITE</p>
+                        </li>
+                        <li class="general-technology">
+                            <i class="fab fa-git-alt"></i>
+                            <p class="general-technology-name">GIT</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="general-wrapper">
+                    <h1 class="general-header">Links</h1>
+                    <ul class="general-list">
+                        <li>
+                            <a href="https://github.com/lukaszsliwinski/"
+                            class="general-link"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <i class="fab fa-github-square"></i>
+                                <p class="general-link-name">github</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/lukaszsliwinski89/"
+                            class="general-link"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                                <p class="general-link-name">linkedin</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
             <button onclick="showHideGeneral()" class="general-btn" id="general_btn">&lt;&lt;</button>
         </div>
@@ -181,7 +195,7 @@
                                 <p class="project-technology-name">PYTHON</p>
                             </li>
                             <li class="project-technology">
-                                <img class="kivy-icon" src="images/kivy.png" width="50" height="50">
+                                <img class="project-icon-img" src="images/kivy.png">
                                 <p class="project-technology-name">KIVY</p>
                             </li>
                         </ul>
@@ -252,11 +266,11 @@
                                 <p class="project-technology-name">PYTHON</p>
                             </li>
                             <li class="project-technology">
-                                <img class="tech-icon-img" src="images/django.jpg" width="50" height="50">
+                                <img class="project-icon-img" src="images/django.jpg">
                                 <p class="project-technology-name">DJANGO</p>
                             </li>
                             <li class="project-technology">
-                                <img class="tech-icon-img" src="images/sqlite.png" width="50" height="50">
+                                <img class="project-icon-img" src="images/sqlite.png">
                                 <p class="project-technology-name">SQLITE</p>
                             </li>
                             <li class="project-technology">
@@ -344,11 +358,11 @@
                                 <p class="project-technology-name">PYTHON</p>
                             </li>
                             <li class="project-technology">
-                                <img class="tech-icon-img" src="images/django.jpg" width="50" height="50">
+                                <img class="project-icon-img" src="images/django.jpg">
                                 <p class="project-technology-name">DJANGO</p>
                             </li>
                             <li class="project-technology">
-                                <img class="tech-icon-img" src="images/sqlite.png" width="50" height="50">
+                                <img class="project-icon-img" src="images/sqlite.png">
                                 <p class="project-technology-name">SQLITE</p>
                             </li>
                             <li class="project-technology">
@@ -472,11 +486,11 @@
                                 <p class="project-technology-name">PYTHON</p>
                             </li>
                             <li class="project-technology">
-                                <img class="tech-icon-img" src="images/django.jpg" width="50" height="50">
+                                <img class="project-icon-img" src="images/django.jpg">
                                 <p class="project-technology-name">DJANGO</p>
                             </li>
                             <li class="project-technology">
-                                <img class="tech-icon-img" src="images/sqlite.png" width="50" height="50">
+                                <img class="project-icon-img" src="images/sqlite.png">
                                 <p class="project-technology-name">SQLITE</p>
                             </li>
                             <li class="project-technology">

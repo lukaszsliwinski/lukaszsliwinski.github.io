@@ -26,7 +26,6 @@ window.addEventListener('scroll', () => {
 
 // function for showing and hiding general information area
 function showHideGeneral() {
-    console.log('działa?');
     if (general_btn.innerHTML == '&lt;&lt;') {
         general_btn.innerHTML = '&gt;&gt;';
         general.classList.remove('visible');
