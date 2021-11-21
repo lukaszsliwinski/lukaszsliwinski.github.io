@@ -11,9 +11,9 @@ section {
     font-weight: 600;
     color: var(--main);
     font-variant: small-caps;
-    display: flex;
     flex-direction: row;
     align-items: center;
+    display: flex;
 }
 
 .section-header-icon {
@@ -40,7 +40,7 @@ section {
 }
 
 .project-name {
-    width: fit-content;
+    width: 100%;
     font-size: 25px;
     font-weight: 600;
     font-variant: small-caps;
@@ -116,11 +116,11 @@ section {
 }
 
 .project-details-screens {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: space-between;
     justify-content: space-around;
+    display: flex;
     margin-top: 20px;
 }
 
@@ -131,19 +131,19 @@ section {
 }
 
 .project-details-technologies {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 
 .project-technology-icon {
-    display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 50px;
+    display: flex;
     margin: 10px;
+    font-size: 50px;
 }
 
 .project-technology-name {
@@ -154,12 +154,32 @@ section {
 }
 
 .github-link {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 
 .github-link a:hover {
+    color: var(--main);
+}
+
+.contact-icon {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    margin: 20px 10px;
+    width: fit-content;
+    font-size: 30px;
+}
+
+.contact-data {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-link:hover {
     color: var(--main);
 }
