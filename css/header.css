@@ -73,3 +73,11 @@
 .active.underline:before {
     background-color: var(--main);
 }
+
+.change-lang {
+    margin: 0 20px -4px 5px;
+}
+
+.flag-img {
+    width: 25px;
+}
