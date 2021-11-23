@@ -21,13 +21,25 @@ const plProjHeaders = {
 
 // Define polish text content
 const plContent = {
-    aboutContent: `&emsp;&emsp;&emsp;Jestem początkującym programistą stawiającym pierwsze kroki w&nbsp;tworzeniu aplikacji 
-    internetowych. W&nbsp;trakcie samodzielnej nauki poznałem podstawową składnię takich języków jak Python 
-    oraz JavaScript. W&nbsp;ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy tworzenia 
-    backend&#8209;u i&nbsp;frontend&#8209;u aplikacji, sposoby komunikacji między nimi, bazy danych, 
+    aboutContent: `&emsp;&emsp;&emsp;Jestem początkującym programistą stawiającym pierwsze kroki w&nbsp;tworzeniu 
+    aplikacji internetowych. W&nbsp;trakcie samodzielnej nauki poznałem podstawową składnię takich języków jak 
+    Python oraz JavaScript. W&nbsp;ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy 
+    tworzenia backend&#8209;u i&nbsp;frontend&#8209;u aplikacji, sposoby komunikacji między nimi, bazy danych, 
     tworzenie szablonów responsywnych i&nbsp;system kontroli wersji. Poniżej przedstawiam kilka efektów mojej 
     dotychczasowej nauki. Poszukuję nowych wyzwań, zawodowych i&nbsp;hobbystycznych, które umożliwią mi dalszy 
-    rozwój i&nbsp;poszerzenie praktycznej wiedzy.`
+    rozwój i&nbsp;poszerzenie praktycznej wiedzy.`,
+
+    projectAboutContent1: `&emsp;Aplikacja wspomagająca naukę słówek angielskiego. 
+    Użytkownik wybiera ile słówek chce przetłumaczyć. 
+    Program losuje z&nbsp;bazy danych słówka i&nbsp;podaje pokolei użytkownikowi do przetłumaczenia. 
+    Za każde poprawne tłumaczenie użytkownik uzyskuje jeden punkt. 
+    Na końcu program podaje sumę punktów. 
+    Baza słówek znajduje się w&nbsp;pliku csv i&nbsp;może być dowolnie modyfikowana.`,
+
+    projectPurposeContent1: `&emsp;Program napisany w&nbsp;celu nabycia praktycznych umiejętności programowania 
+    w&nbsp;języku Python, z&nbsp;wykorzystaniem frameworka Kivy. W&nbsp;pierwszej wersji program mógł być 
+    uruchamiany jedynie w&nbsp;konsoli, następnie w&nbsp;ramach dalszej nauki został dopisany interface GUI. 
+    Finalna wersja została przeprojektowania aby utrwalić wiedzę z&nbsp;zakresu programowania z&nbsp;wykorzystaniem Kivy.`,
 };
 
 // Define english document headers
@@ -57,7 +69,16 @@ const engContent = {
     creating an application backend and frontend, methods of communication between them, 
     databases, creating responsive templates and the version control system. Below I&nbsp;present 
     some effects of my previous learning. I&nbsp;am looking for new professional and hobby challenges 
-    which will enable me to further develop and expand my practical knowledge.`
+    which will enable me to further develop and expand my practical knowledge.`,
+
+    projectAboutContent1: `&emsp;Application helping the learning of English vocabulary. User chooses how many 
+    words to translate. Program chooses random words from database and displays in sequence to translate. For every 
+    correct translation user scores one point. Program displays final result in the end. Database of words is located 
+    in csv file and can be modified by user.`,
+
+    projectPurposeContent1: `&emsp;Program was written to get practical skills in Python programming, using the Kivy 
+    framework. The first version of program could be run only in console, then the GUI interface was added. Final version 
+    was rebuilt to consolidate knowledge about programming with Kivy`,
 };
 
 
