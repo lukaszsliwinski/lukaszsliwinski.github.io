@@ -26,9 +26,9 @@
                 Łukasz Śliwiński
             </div>
             <div class="menu">
-                <a class="nav-btn underline introduction active" href="#introduction">O mnie</a>
-                <a class="nav-btn underline projects" href="#projects">Projekty</a>
-                <a class="nav-btn underline contact" href="#contact">Kontakt</a>
+                <a class="nav-btn underline introduction active" href="#introduction" id="menuAboutBtn"></a>
+                <a class="nav-btn underline projects" href="#projects" id="menuProjectsBtn"></a>
+                <a class="nav-btn underline contact" href="#contact" id="menuContactBtn"></a>
                 <!-- 3rd classes (introduction, projects, etc.) are for the correct operation of the 
                 highlight navigation menu in script.js -->
                 <div class="change-lang">
@@ -129,16 +129,14 @@
             <button onclick="showHideGeneral()" class="general-btn" id="general_btn">&lt;&lt;</button>
         </div>
 
-        <!-- Site sections -->
+        <!-- Introduction section -->
         <section class="introduction-section" id="introduction">
             <div class="section-header">
                 <div class="section-header-icon"><i class="fas fa-user-alt"></i></div>
-                O mnie
+                <span id="aboutHeader"></span>
             </div>
             <div class="section-container">
-                <div class="about-data" id="text1"></div>
-                <div class="about-data" id="text2"></div>
-                <!-- <div class="about-data">
+                <div class="about-data">
                     &emsp;&emsp;&emsp;Jestem początkującym programistą stawiającym pierwsze kroki w&nbsp;tworzeniu aplikacji 
                     internetowych. W&nbsp;trakcie samodzielnej nauki poznałem podstawową składnię takich języków jak Python 
                     oraz JavaScript. W&nbsp;ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy tworzenia 
@@ -146,13 +144,15 @@
                     tworzenie szablonów responsywnych i&nbsp;system kontroli wersji. Poniżej przedstawiam kilka efektów mojej 
                     dotychczasowej nauki. Poszukuję nowych wyzwań, zawodowych i&nbsp;hobbystycznych, które umożliwią mi dalszy 
                     rozwój i&nbsp;poszerzenie praktycznej wiedzy.
-                </div> -->
+                </div>
             </div>
         </section>
+
+        <!-- Project section -->
         <section class="projects-section" id="projects">
             <div class="section-header">
                 <div class="section-header-icon"><i class="fas fa-laptop-code"></div></i>
-                Projekty
+                <span id="projectsHeader"></span>
             </div>
             <ul class="section-container">
                 <li class="project">
@@ -160,7 +160,7 @@
                         English Dictionary<div class="extend-btn">&#129095;</div>
                     </button>
                     <div class="project-details">
-                        <h1 class="project-details-header">OPIS PROGRAMU</h1>
+                        <h1 class="project-details-header" id="projectAboutHeader1"></h1>
                         <p class="project-details-content">
                             &emsp;Aplikacja wspomagająca naukę słówek angielskiego. 
                             Użytkownik wybiera ile słówek chce przetłumaczyć. 
@@ -192,14 +192,14 @@
                                 </a>
                             </li>
                         </ul>
-                        <h1 class="project-details-header">CEL DYDAKTYCZNY</h1>
+                        <h1 class="project-details-header" id="projectPurposeHeader1"></h1>
                         <p class="project-details-content">
                             &emsp;Program napisany w&nbsp;celu nabycia praktycznych umiejętności programowania w&nbsp;języku Python, 
                             z&nbsp;wykorzystaniem frameworka Kivy. W&nbsp;pierwszej wersji program mógł być uruchamiany jedynie w&nbsp;konsoli, 
                             następnie w&nbsp;ramach dalszej nauki został dopisany interface GUI. Finalna wersja została przeprojektowania 
                             aby utrwalić wiedzę z&nbsp;zakresu programowania z&nbsp;wykorzystaniem Kivy.
                         </p>
-                        <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
+                        <h1 class="project-details-header" id="projectTechnologiesHeader1"></h1>
                         <ul class="project-details-technologies">
                             <li class="project-technology">
                                 <i class="fab fa-python"></i>
@@ -210,7 +210,7 @@
                                 <p class="project-technology-name">KIVY</p>
                             </li>
                         </ul>
-                        <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
+                        <h1 class="project-details-header" id="projectSourceHeader1"></h1>
                         <div class="github-link">
                             <a href="https://github.com/lukaszsliwinski/english_dictionary_kivy"
                             class="project-technology"
@@ -227,7 +227,7 @@
                         Cooking Blog<div class="extend-btn">&#129095;</div>
                     </button>
                     <div class="project-details">
-                        <h1 class="project-details-header">OPIS PROGRAMU</h1>
+                        <h1 class="project-details-header" id="projectAboutHeader2"></h1>
                         <p class="project-details-content">
                             &emsp;Aplikacja internetowa do przechowywania przepisów kulinarnych w&nbsp;formie bloga. 
                             Po utworzeniu konta i&nbsp;zalogowaniu do panelu administratorskiego, użytkownik może dodawać przepisy. 
@@ -260,7 +260,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <h1 class="project-details-header">CEL DYDAKTYCZNY</h1>
+                        <h1 class="project-details-header" id="projectPurposeHeader2"></h1>
                         <p class="project-details-content">
                             &emsp;Celem było rozpoczęcie nauki w&nbsp;obszarze aplikacji internetowych z&nbsp;wykorzystaniem języka Python. 
                             Aplikacja napisana w&nbsp;oparciu o&nbsp;tutorial zamieszczony w&nbsp;dokumentacji Django. W&nbsp;czasie pisania aplikacji 
@@ -270,7 +270,7 @@
                             z&nbsp;jego wykorzystaniem. Strona została dopasowana do różnych rozdzielczośći monitorów z&nbsp;zastosowaniem 
                             techniki Responsive Web Design.
                         </p>
-                        <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
+                        <h1 class="project-details-header" id="projectTechnologiesHeader2"></h1>
                         <ul class="project-details-technologies">
                             <li class="project-technology">
                                 <i class="fab fa-python"></i>
@@ -301,7 +301,7 @@
                                 <p class="project-technology-name">RWD</p>
                             </li>
                         </ul>
-                        <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
+                        <h1 class="project-details-header" id="projectSourceHeader2"></h1>
                         <div class="github-link">
                             <a href="https://github.com/lukaszsliwinski/cooking_blog"
                             class="project-technology"
@@ -318,7 +318,7 @@
                         Task Planner<div class="extend-btn">&#129095;</div>
                     </button>
                     <div class="project-details">
-                        <h1 class="project-details-header">OPIS PROGRAMU</h1>
+                        <h1 class="project-details-header" id="projectAboutHeader3"></h1>
                         <p class="project-details-content">
                             &emsp;Aplikacja internetowa do zarządzania zadaniami do wykonania.
                             Po utworzeniu konta i&nbsp;zalogowaniu można w&nbsp;aplikacji dodawać zadania 
@@ -354,7 +354,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <h1 class="project-details-header">CEL DYDAKTYCZNY</h1>
+                        <h1 class="project-details-header" id="projectPurposeHeader3"></h1>
                         <p class="project-details-content">
                             &emsp;Celem było utrwalenie oraz poszerzenie wiedzy z&nbsp;zakresu programowania z&nbsp;wykorzystaniem 
                             frameworka Django. Wykorzystano aplikację z&nbsp;<a href="https://www.youtube.com/watch?v=llbtoQTt4qw" 
@@ -362,7 +362,7 @@
                             zmodyfikowana i&nbsp;rozszerzona o&nbsp;kolumny do sortowania zadań po dacie. W&nbsp;przeciwieństwie do 
                             poprzedniej aplikacji, widoki zostały napisane z&nbsp;wykorzystaniem technologii Class Based Views.
                         </p>
-                        <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
+                        <h1 class="project-details-header" id="projectTechnologiesHeader3"></h1>
                         <ul class="project-details-technologies">
                             <li class="project-technology">
                                 <i class="fab fa-python"></i>
@@ -385,7 +385,7 @@
                                 <p class="project-technology-name">CSS3</p>
                             </li>
                         </ul>
-                        <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
+                        <h1 class="project-details-header" id="projectSourceHeader3"></h1>
                         <div class="github-link">
                             <a href="https://github.com/lukaszsliwinski/task_planner"
                             class="project-technology"
@@ -402,7 +402,7 @@
                         Simply Metronome<div class="extend-btn">&#129095;</div>
                     </button>
                     <div class="project-details">
-                        <h1 class="project-details-header">OPIS PROGRAMU</h1>
+                        <h1 class="project-details-header" id="projectAboutHeader4"></h1>
                         <p class="project-details-content">
                             &emsp;Aplikacja internetowa symulująca działanie prostego metronomu. 
                             W&nbsp;programie można ustawić tempo oraz metrum. W&nbsp;zależności od ilości 
@@ -422,11 +422,11 @@
                                 </a>
                             </li>
                         </ul>
-                        <h1 class="project-details-header">CEL DYDAKTYCZNY</h1>
+                        <h1 class="project-details-header" id="projectPurposeHeader4"></h1>
                         <p class="project-details-content">
                             &emsp;Program został napisany w&nbsp;celu opanowania podstaw języka JavaScript.
                         </p>
-                        <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
+                        <h1 class="project-details-header" id="projectTechnologiesHeader4"></h1>
                         <ul class="project-details-technologies">
                             <li class="project-technology">
                                 <i class="fab fa-html5"></i>
@@ -441,7 +441,7 @@
                                 <p class="project-technology-name">JAVASCRIPT</p>
                             </li>
                         </ul>
-                        <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
+                        <h1 class="project-details-header" id="projectSourceHeader4"></h1>
                         <div class="github-link">
                             <a href="https://github.com/lukaszsliwinski/simply_metronome"
                             class="project-technology"
@@ -458,7 +458,7 @@
                         Music Player<div class="extend-btn">&#129095;</div>
                     </button>
                     <div class="project-details">
-                        <h1 class="project-details-header">OPIS PROGRAMU</h1>
+                        <h1 class="project-details-header" id="projectAboutHeader5"></h1>
                         <p class="project-details-content">
                             &emsp;Aplikacja internetowa pozwalająca na przesyłanie utworów do bazy danych i&nbsp;odtwarzania w&nbsp;przeglądarce. 
                             Po utworzeniu konta i&nbsp;zalogowaniu do panelu administratorskiego, użytkownik może dodawać utwory. 
@@ -481,7 +481,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <h1 class="project-details-header">CEL DYDAKTYCZNY</h1>
+                        <h1 class="project-details-header" id="projectPurposeHeader5"></h1>
                         <p class="project-details-content">
                             &emsp;Celem było wykorzystanie dotychczas zdobytej wiedzy z&nbsp;zakresu programowania w&nbsp;Django 
                             oraz JavaScript i&nbsp;połączenie obu technologii. Backend aplikacji wykorzystuje Django do 
@@ -490,7 +490,7 @@
                             przechowujących dane o&nbsp;utworach. Z&nbsp;przygotowanej listy korzysta odtwarzacz na stronie głównej 
                             napisany przy użyciu JavaScript.
                         </p>
-                        <h1 class="project-details-header">UŻYTE TECHNOLOGIE</h1>
+                        <h1 class="project-details-header" id="projectTechnologiesHeader5"></h1>
                         <ul class="project-details-technologies">
                             <li class="project-technology">
                                 <i class="fab fa-python"></i>
@@ -517,7 +517,7 @@
                                 <p class="project-technology-name">JAVASCRIPT</p>
                             </li>
                         </ul>
-                        <h1 class="project-details-header">KOD ŹRÓDŁOWY</h1>
+                        <h1 class="project-details-header" id="projectSourceHeader5"></h1>
                         <div class="github-link">
                             <a href="https://github.com/lukaszsliwinski/music_player"
                             class="project-technology"
@@ -532,10 +532,11 @@
             </ul>
         </section>
 
+        <!-- Contact section -->
         <section class="contact-section" id="contact">
             <div class="section-header">
                 <div class="section-header-icon"><i class="fas fa-address-card"></i></div>
-                Kontakt
+                <span id="contactHeader"></span>
             </div>
             <div class="section-container">
                 <ul>
