@@ -1,19 +1,32 @@
-let lang = 'pl'
+// Define polish text content
+const pl = {
+    text1: 'Ten fragment jest po polsku',
+    text2: 'Ten też',
+};
 
-const text1Pl = 'Ten fragment jest po polsku'
-const text1Eng = 'This part is in English'
+
+// Define english text content
+const eng = {
+    text1: 'This part is in English',
+    text2: 'This also',
+};
 
 
 // Set initial statement
+let lang = 'pl'
 setLanguage();
 
 
 // Function to set language
 function setLanguage() {
     if (lang == 'pl') {
-        text1.innerHTML = text1Pl;
+        for (const [key, value] of Object.entries(pl)) {
+            document.getElementById(key).innerHTML = value;
+        };
     } else {
-        text1.innerHTML = text1Eng;
+        for (const [key, value] of Object.entries(eng)) {
+            document.getElementById(key).innerHTML = value;
+        };
     };
 };
 
