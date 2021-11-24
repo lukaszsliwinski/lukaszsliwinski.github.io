@@ -48,6 +48,7 @@
     width: 96%;
     height: 500px;
     padding: 1%;
+    background-color: var(--project-background);
 }
 
 @-moz-document url-prefix() {

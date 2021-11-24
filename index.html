@@ -45,6 +45,7 @@
         <!-- General information area -->
         <div class="general visible" id="general">
             <div class="general-details">
+                
                 <img class="photo" src="images/photo.jpg">
 
                 <div class="general-wrapper">
@@ -124,7 +125,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
             </div>
             <button onclick="showHideGeneral()" class="general-btn" id="general_btn">&lt;&lt;</button>
         </div>
@@ -146,7 +147,12 @@
                 <div class="section-header-icon"><i class="fas fa-laptop-code"></div></i>
                 <span id="projectsHeader"></span>
             </div>
+
+            <!-- List of projects -->
             <ul class="section-container">
+
+
+                <!-- English dictionary project -->
                 <li class="project">
                     <button onclick="showHideProject('project1')" class="project-name" id="project1">
                         English Dictionary<div class="extend-btn">&#129095;</div>
@@ -202,21 +208,16 @@
                         </div>
                     </div>
                 </li>
+
+
+                <!-- Cooking blog project -->
                 <li class="project">
                     <button onclick="showHideProject('project2')" class="project-name" id="project2">
                         Cooking Blog<div class="extend-btn">&#129095;</div>
                     </button>
                     <div class="project-details">
                         <h1 class="project-details-header" id="projectAboutHeader2"></h1>
-                        <article class="project-details-content">
-                            &emsp;Aplikacja internetowa do przechowywania przepisów kulinarnych w&nbsp;formie bloga. 
-                            Po utworzeniu konta i&nbsp;zalogowaniu do panelu administratorskiego, użytkownik może dodawać przepisy. 
-                            W&nbsp;ramach przepisu dodawana jest nazwa, kraj, kategoria posiłku, zdjęcie, informacja czy danie jest 
-                            dietetyczne, opis przygotowania, lista składników, lista przypraw. Przepisy wyświetlane są na 
-                            stronie głównej w&nbsp;formie kart. Po kliknięciu w&nbsp;kartę wyświetlane są szczegóły. Dania można filtrować 
-                            po krajach, kategoriach oraz dietetycznych poprzez menu z&nbsp;lewej strony. W&nbsp;nagłówku strony znajduje się 
-                            wyszukiwarka po nazwie dania.
-                        </article>
+                        <article class="project-details-content" id="projectAboutContent2"></article>
                         <ul class="project-details-screens">
                             <li>
                                 <a data-lightbox="mygallery" href="screens/cooking1.png">
@@ -241,15 +242,7 @@
                             </li>
                         </ul>
                         <h1 class="project-details-header" id="projectPurposeHeader2"></h1>
-                        <article class="project-details-content">
-                            &emsp;Celem było rozpoczęcie nauki w&nbsp;obszarze aplikacji internetowych z&nbsp;wykorzystaniem języka Python. 
-                            Aplikacja napisana w&nbsp;oparciu o&nbsp;tutorial zamieszczony w&nbsp;dokumentacji Django. W&nbsp;czasie pisania aplikacji 
-                            poznałem podstawy HTML5 i&nbsp;CSS3, podstawy baz danych na przykładzie bazy SQLite oraz budowę kompletnej 
-                            aplikacji internetowej w&nbsp;oparciu o&nbsp;Django. Layout aplikacji był kilkukrotnie modyfikowany, równolegle 
-                            z&nbsp;nabywaniem nowej wiedzy. Po poznaniu podstaw języka JavaScript, zostało dodane nemu harmonijkowe 
-                            z&nbsp;jego wykorzystaniem. Strona została dopasowana do różnych rozdzielczośći monitorów z&nbsp;zastosowaniem 
-                            techniki Responsive Web Design.
-                        </article>
+                        <article class="project-details-content" id="projectPurposeContent2"></article>
                         <h1 class="project-details-header" id="projectTechnologiesHeader2"></h1>
                         <ul class="project-details-technologies">
                             <li class="project-technology">
@@ -293,24 +286,16 @@
                         </div>
                     </div>
                 </li>
+
+
+                <!-- Task planner project -->
                 <li class="project">
                     <button onclick="showHideProject('project3')" class="project-name" id="project3">
                         Task Planner<div class="extend-btn">&#129095;</div>
                     </button>
                     <div class="project-details">
                         <h1 class="project-details-header" id="projectAboutHeader3"></h1>
-                        <article class="project-details-content">
-                            &emsp;Aplikacja internetowa do zarządzania zadaniami do wykonania.
-                            Po utworzeniu konta i&nbsp;zalogowaniu można w&nbsp;aplikacji dodawać zadania 
-                            wraz z&nbsp;terminem wykonania. Można utworzyć więcej niż jedno konto, każdy 
-                            użytkownik ma wtedy dostęp tylko do swoich zadań. Aplikacja posiada 
-                            własny kreator zadań, dzięki czemu nie ma konieczności logowania się 
-                            do wbudowanego panelu administratorskiego Django - wszystkie zadania 
-                            można dodać w&nbsp;aplikacji. Strona główna podzielona jest na 4&nbsp;kolumny. 
-                            3&nbsp;pierwsze filtrują zadania po datach (opóźnione, dzisiejsze, przyszłe). 
-                            Ostatnia kolumna zawiera zadania oznaczone jako zakończone.
-                            W&nbsp;lewym górnym rogu znajduje się wyszukiwarka po tytule zadania.
-                        </article>
+                        <article class="project-details-content" id="projectAboutContent3"></article>
                         <ul class="project-details-screens">
                             <li>
                                 <a data-lightbox="mygallery" href="screens/task1.png">
@@ -335,13 +320,7 @@
                             </li>
                         </ul>
                         <h1 class="project-details-header" id="projectPurposeHeader3"></h1>
-                        <article class="project-details-content">
-                            &emsp;Celem było utrwalenie oraz poszerzenie wiedzy z&nbsp;zakresu programowania z&nbsp;wykorzystaniem 
-                            frameworka Django. Wykorzystano aplikację z&nbsp;<a href="https://www.youtube.com/watch?v=llbtoQTt4qw" 
-                            class="yt-link" target="_blank" rel="noopener noreferrer">tutorialu</a>, która została 
-                            zmodyfikowana i&nbsp;rozszerzona o&nbsp;kolumny do sortowania zadań po dacie. W&nbsp;przeciwieństwie do 
-                            poprzedniej aplikacji, widoki zostały napisane z&nbsp;wykorzystaniem technologii Class Based Views.
-                        </article>
+                        <article class="project-details-content" id="projectPurposeContent3"></article>
                         <h1 class="project-details-header" id="projectTechnologiesHeader3"></h1>
                         <ul class="project-details-technologies">
                             <li class="project-technology">
@@ -377,19 +356,16 @@
                         </div>
                     </div>
                 </li>
+
+
+                <!-- Simply metronome project -->
                 <li class="project">
                     <button onclick="showHideProject('project4')" class="project-name" id="project4">
                         Simply Metronome<div class="extend-btn">&#129095;</div>
                     </button>
                     <div class="project-details">
                         <h1 class="project-details-header" id="projectAboutHeader4"></h1>
-                        <article class="project-details-content">
-                            &emsp;Aplikacja internetowa symulująca działanie prostego metronomu. 
-                            W&nbsp;programie można ustawić tempo oraz metrum. W&nbsp;zależności od ilości 
-                            uderzeń na minutę (bpm), program podaje włoską nazwę tempa. 
-                            W&nbsp;aplikacji wykorzystano gotowy timer z&nbsp;<a href="https://www.youtube.com/watch?v=x8PBWobv6NY" 
-                            class="yt-link" target="_blank" rel="noopener noreferrer">tutorialu</a>. 
-                        </article>
+                        <article class="project-details-content" id="projectAboutContent4"></article>
                         <ul class="project-details-screens">
                             <li>
                                 <a data-lightbox="mygallery" href="screens/metronome1.png">
@@ -403,9 +379,7 @@
                             </li>
                         </ul>
                         <h1 class="project-details-header" id="projectPurposeHeader4"></h1>
-                        <article class="project-details-content">
-                            &emsp;Program został napisany w&nbsp;celu opanowania podstaw języka JavaScript.
-                        </article>
+                        <article class="project-details-content" id="projectPurposeContent4"></article>
                         <h1 class="project-details-header" id="projectTechnologiesHeader4"></h1>
                         <ul class="project-details-technologies">
                             <li class="project-technology">
@@ -433,22 +407,16 @@
                         </div>
                     </div>
                 </li>
+
+
+                <!-- Music player project -->
                 <li class="project">
                     <button onclick="showHideProject('project5')" class="project-name" id="project5">
                         Music Player<div class="extend-btn">&#129095;</div>
                     </button>
                     <div class="project-details">
                         <h1 class="project-details-header" id="projectAboutHeader5"></h1>
-                        <article class="project-details-content">
-                            &emsp;Aplikacja internetowa pozwalająca na przesyłanie utworów do bazy danych i&nbsp;odtwarzania w&nbsp;przeglądarce. 
-                            Po utworzeniu konta i&nbsp;zalogowaniu do panelu administratorskiego, użytkownik może dodawać utwory. 
-                            W&nbsp;ramach utworu dodawany jest tytuł, wykonawca, okładka oraz plik dźwiękowy. Na stronie głównej 
-                            wyświetlony jest odtwarzać wraz z&nbsp;playlistą wszystkich dodanych utworów. Odtwarzacz pozwala na 
-                            odtworzenie utworu, przejście do następnęgo/poprzedniego, wybranie dowolnego utworu z&nbsp;playlisty 
-                            oraz przewijanie przy pomocy suwaka. W&nbsp;trakcie odtwarzania wyświetlany jest tytuł utworu, wykonawca 
-                            oraz okładka. Po zakończeniu odtwarzania utworu, automatycznie odtwarzany jest następny z&nbsp;playlisty. 
-                            Po zakończeniu ostatniego utworu odtwarzacz jest zatrzymywany.
-                        </article>
+                        <article class="project-details-content" id="projectAboutContent5"></article>
                         <ul class="project-details-screens">
                             <li>
                                 <a data-lightbox="mygallery" href="screens/player1.png">
@@ -462,14 +430,7 @@
                             </li>
                         </ul>
                         <h1 class="project-details-header" id="projectPurposeHeader5"></h1>
-                        <article class="project-details-content">
-                            &emsp;Celem było wykorzystanie dotychczas zdobytej wiedzy z&nbsp;zakresu programowania w&nbsp;Django 
-                            oraz JavaScript i&nbsp;połączenie obu technologii. Backend aplikacji wykorzystuje Django do 
-                            przechowywania utworów w&nbsp;bazie danych. Baza danych jest przekazywana w&nbsp;postaci ciągu znaków 
-                            do szablonu. Funkcja napisana w&nbsp;JavaScript konwertuje przesłany ciąg znaków na listę obiektów 
-                            przechowujących dane o&nbsp;utworach. Z&nbsp;przygotowanej listy korzysta odtwarzacz na stronie głównej 
-                            napisany przy użyciu JavaScript.
-                        </article>
+                        <article class="project-details-content" id="projectPurposeContent5"></article>
                         <h1 class="project-details-header" id="projectTechnologiesHeader5"></h1>
                         <ul class="project-details-technologies">
                             <li class="project-technology">
