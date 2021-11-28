@@ -79,21 +79,20 @@ const plContent = {
 
     projectPurposeContent4: `&emsp;Program został napisany w&nbsp;celu opanowania podstaw języka JavaScript.`,
     
-    projectAboutContent5: `&emsp;Aplikacja internetowa pozwalająca na przesyłanie utworów do bazy danych i&nbsp;odtwarzania w&nbsp;przeglądarce. 
-    Po utworzeniu konta i&nbsp;zalogowaniu do panelu administratorskiego, użytkownik może dodawać utwory. 
-    W&nbsp;ramach utworu dodawany jest tytuł, wykonawca, okładka oraz plik dźwiękowy. Na stronie głównej 
-    wyświetlony jest odtwarzać wraz z&nbsp;playlistą wszystkich dodanych utworów. Odtwarzacz pozwala na 
-    odtworzenie utworu, przejście do następnęgo/poprzedniego, wybranie dowolnego utworu z&nbsp;playlisty 
-    oraz przewijanie przy pomocy suwaka. W&nbsp;trakcie odtwarzania wyświetlany jest tytuł utworu, wykonawca 
-    oraz okładka. Po zakończeniu odtwarzania utworu, automatycznie odtwarzany jest następny z&nbsp;playlisty. 
-    Po zakończeniu ostatniego utworu odtwarzacz jest zatrzymywany.`,
+    projectAboutContent5: `&emsp;Aplikacja internetowa pozwalająca na przesyłanie utworów do bazy danych 
+    i&nbsp;odtwarzania w&nbsp;przeglądarce. Po utworzeniu konta i&nbsp;zalogowaniu do panelu administratorskiego, 
+    użytkownik może dodawać utwory. W&nbsp;ramach utworu dodawany jest tytuł, wykonawca, okładka oraz plik 
+    dźwiękowy. Na stronie głównej wyświetlony jest odtwarzać wraz z&nbsp;playlistą wszystkich dodanych utworów. 
+    Odtwarzacz pozwala na odtworzenie utworu, przejście do następnęgo/poprzedniego, wybranie dowolnego utworu 
+    z&nbsp;playlisty oraz przewijanie przy pomocy suwaka. W&nbsp;trakcie odtwarzania wyświetlany jest tytuł 
+    utworu, wykonawca oraz okładka. Po zakończeniu odtwarzania utworu, automatycznie odtwarzany jest następny 
+    z&nbsp;playlisty. Po zakończeniu ostatniego utworu odtwarzacz jest zatrzymywany.`,
 
-    projectPurposeContent5: `&emsp;Celem było wykorzystanie dotychczas zdobytej wiedzy z&nbsp;zakresu programowania w&nbsp;Django 
-    oraz JavaScript i&nbsp;połączenie obu technologii. Backend aplikacji wykorzystuje Django do 
-    przechowywania utworów w&nbsp;bazie danych. Baza danych jest przekazywana w&nbsp;postaci ciągu znaków 
-    do szablonu. Funkcja napisana w&nbsp;JavaScript konwertuje przesłany ciąg znaków na listę obiektów 
-    przechowujących dane o&nbsp;utworach. Z&nbsp;przygotowanej listy korzysta odtwarzacz na stronie głównej 
-    napisany przy użyciu JavaScript.`,
+    projectPurposeContent5: `&emsp;Celem było wykorzystanie dotychczas zdobytej wiedzy z&nbsp;zakresu programowania 
+    w&nbsp;Django oraz JavaScript i&nbsp;połączenie obu technologii. Backend aplikacji wykorzystuje Django do 
+    przechowywania utworów w&nbsp;bazie danych. Baza utworów jest przekazywana do szablonu i przypisywana
+    do zmiennej w JavaScript jako lista obiektów przechowujących dane o&nbsp;utworach. Z&nbsp;przygotowanej 
+    listy korzysta odtwarzacz na stronie głównej napisany przy użyciu JavaScript.`,
 };
 
 // Define english document headers
@@ -177,8 +176,8 @@ const engContent = {
 
     projectPurposeContent5: `&emsp;The purpose was to connect learned knowledge of Django and JavaScript programming, 
     and mix both technologies. Backend of the application uses Django to store database of songs. The database is 
-    passed as a string to the template. JavaScipt function converts passed string to list of objects including 
-    informations about songs. Written in JavaScript player uses prepared list to play songs on main page.`,
+    passed to the template and assign to variable in JavaScipt as a list of objects including informations about 
+    songs. Written in JavaScript player uses prepared list to play songs on main page.`,
 };
 
 
