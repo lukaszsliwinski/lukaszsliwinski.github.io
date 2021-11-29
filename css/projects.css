@@ -15,11 +15,13 @@
     width: 100%;
     font-size: 25px;
     font-weight: 600;
+    text-align: center;
     font-variant: small-caps;
 }
 
 .project-name:hover {
     cursor: pointer;
+    color: var(--main);
 }
 
 .project.extended > .project-name {
