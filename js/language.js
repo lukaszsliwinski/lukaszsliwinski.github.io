@@ -26,8 +26,8 @@ const plContent = {
     Python oraz JavaScript. W&nbsp;ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy 
     tworzenia backend&#8209;u i&nbsp;frontend&#8209;u aplikacji, sposoby komunikacji między nimi, bazy danych, 
     tworzenie szablonów responsywnych i&nbsp;system kontroli wersji. Poniżej przedstawiam kilka efektów mojej 
-    dotychczasowej nauki. Poszukuję nowych wyzwań, zawodowych i&nbsp;hobbystycznych, które umożliwią mi dalszy 
-    rozwój i&nbsp;poszerzenie praktycznej wiedzy.`,
+    dotychczasowej nauki. Poszukuję nowych wyzwań, które umożliwią mi dalszy rozwój i&nbsp;poszerzenie praktycznej 
+    wiedzy.`,
 
     projectAboutContent1: `&emsp;Aplikacja wspomagająca naukę słówek angielskiego. Użytkownik wybiera ile 
     słówek chce przetłumaczyć. Program losuje z&nbsp;bazy danych słówka i&nbsp;podaje pokolei użytkownikowi 
@@ -43,10 +43,10 @@ const plContent = {
     projectAboutContent2: `&emsp;Aplikacja internetowa do przechowywania przepisów kulinarnych w&nbsp;formie 
     bloga. Po utworzeniu konta i&nbsp;zalogowaniu do panelu administratorskiego, użytkownik może dodawać 
     przepisy. W&nbsp;ramach przepisu dodawana jest nazwa, kraj, kategoria posiłku, zdjęcie, informacja czy 
-    danie jest dietetyczne, opis przygotowania, lista składników, lista przypraw. Przepisy wyświetlane są na 
-    stronie głównej w&nbsp;formie kart. Po kliknięciu w&nbsp;kartę wyświetlane są szczegóły. Dania można 
-    filtrować po krajach, kategoriach oraz dietetycznych poprzez menu z&nbsp;lewej strony. W&nbsp;nagłówku 
-    strony znajduje się wyszukiwarka po nazwie dania.`,
+    danie jest dietetyczne (oznaczone ikoną jabłka), opis przygotowania, lista składników, lista przypraw. 
+    Przepisy wyświetlane są na stronie głównej w&nbsp;formie kart. Po kliknięciu w&nbsp;kartę wyświetlane 
+    są szczegóły. Dania można filtrować po krajach, kategoriach oraz dietetycznych poprzez menu z&nbsp;lewej 
+    strony. W&nbsp;nagłówku strony znajduje się wyszukiwarka po nazwie dania.`,
 
     projectPurposeContent2: `&emsp;Celem było rozpoczęcie nauki w&nbsp;obszarze aplikacji internetowych 
     z&nbsp;wykorzystaniem języka Python. Aplikacja napisana w&nbsp;oparciu o&nbsp;tutorial zamieszczony 
@@ -116,68 +116,76 @@ const engProjHeaders = {
 
 // Define english text content
 const engContent = {
-    aboutContent: `&emsp;&emsp;&emsp;I&nbsp;am a&nbsp;beginner programmer taking the first steps in creating 
-    web applications. During self&#8209;study, I&nbsp;learned the basic syntax of such languages ​​as Python 
-    and JavaScript. As part of the practical exercises, I&nbsp;created several applications, learning the 
-    basics of creating an application backend and frontend, methods of communication between them, 
-    databases, creating responsive templates and the version control system. Below I&nbsp;present 
-    some effects of my previous learning. I&nbsp;am looking for new professional and hobby challenges 
+    aboutContent: `&emsp;&emsp;&emsp;I&nbsp;am a&nbsp;beginner programmer taking the first steps in 
+    creating web applications. During selfstudy, I&nbsp;learned the basic syntax of such languages ​​as 
+    Python and JavaScript. As part of the practical exercises, I&nbsp;created several applications, 
+    learning the basics of creating an application’s backend and frontend, methods of communication 
+    between them, databases, creating responsive templates and version control system. Below 
+    I&nbsp;present some effects of my learning process. I&nbsp;am looking for new challenges 
     which will enable me to further develop and expand my practical knowledge.`,
 
-    projectAboutContent1: `&emsp;Application helping the learning of English vocabulary. User chooses how many 
-    words to translate. Program chooses random words from database and displays in sequence to translate. For 
-    every correct translation user scores one point. Program displays final result in the end. Database of words 
-    is located in csv file and can be modified by user.`,
+    projectAboutContent1: `&emsp;An application helping in the process of learning English vocabulary. 
+    The user chooses how many words to translate. The program chooses random words from the database 
+    and displays them in a&nbsp;sequence to be translated. For every correct translation the user scores 
+    one point. The program displays the final result at the end. The database of words is located in 
+    a&nbsp;csv file and can be modified by the user.`,
 
-    projectPurposeContent1: `&emsp;Program was written to get practical skills in Python programming, using 
-    the Kivy framework. The first version of program could be run only in console, then the GUI interface 
-    was added. Final version was rebuilt to consolidate knowledge about programming with Kivy.`,
+    projectPurposeContent1: `&emsp;The program was written to gain practical skills in Python programming, 
+    using the Kivy framework. The first version of the program could be run only in console, then the GUI 
+    interface was added. The final version was rebuilt to consolidate my knowledge about programming with 
+    Kivy.`,
 
     projectAboutContent2: `&emsp;A&nbsp;web application for storing recipes in the form of a&nbsp;blog. 
-    After creating an account and logging into the administration panel, the user can add recipes. In the 
-    recipe can add the name, country, category of the meal, photo, information whether the dish is diet, 
-    description of the preparation, list of ingredients and list of spices. The recipes are displayed on 
-    the home page as cards. Dishes can be filtered by countries, categories and dietary through the menu 
-    on the left. In the header of the page is search engine by the name of the dish.`,
+    After creating an account and logging into the administration panel, the user can add recipes. In 
+    the recipe they can add the name, country, category of the meal, photo, information whether the dish 
+    is low-calorie (apple icon), description of the preparation, list of ingredients and list of spices 
+    needed. The recipes are displayed on the home page as cards. Dishes can be filtered by countries, 
+    categories and low-calorie details using the menu on the left. In the header of the page there is 
+    a&nbsp;search engine which allows to look for recipes by the name of the dish.`,
 
     projectPurposeContent2: `&emsp;The purpose was to start learning programming web applications using 
-    Python language. The application is based on tutorial from Django documentation. In the process of 
-    creating the application, I&nbsp;learned basics of HTML5 and CSS3, basics of databases on the example 
-    of SQLite3 and construction of complete web application in Django. In the process of learning, the 
-    layout was changed several times. The accordion menu using JavaScript was added after learning 
-    the basics of JS. Website was fit to different display dimensions using Resmonsive Web Design technology.`,
+    Python language. The application is based on a&nbsp;tutorial from Django documentation. In the process 
+    of creating the application, I&nbsp;learned basics of HTML5 and CSS3, basics of databases on the example 
+    of SQLite3 and the construction of a&nbsp;complete web application in Django. In the process of learning, 
+    the layout was changed several times. The accordion menu using JavaScript was added after learning the 
+    basics of JS. The website was fitted to different display dimensions using Responsive Web Design 
+    technology.`,
 
     projectAboutContent3: `&emsp;A&nbsp;web application for task management. After creating an account and 
-    logging in, the user can add tasks with deadline. It is able to create more than one account, every user
-    has access only to own tasks. Application has custom task creator, there is no need to logging into the 
-    Django administration panel. All tasks can be creating in the application. The main page is divided by
-    4&nbsp;columns. The first 3&nbsp;columns filter tasks by deadlines (delayed, today's and comming soon). 
-    The last column contains completed tasks. In the left top corner is search engine by the name of the task.`,
+    logging in, the user can add tasks indicating a&nbsp;deadline. It is possible to create more than one 
+    account, every user has access only to their own tasks. The application has a&nbsp;custom task creator, 
+    there is no need to log into the Django administration panel. All tasks can be created in the application. 
+    The main page is divided into 4&nbsp;columns. The first 3&nbsp;columns filter tasks by deadlines (overdue, 
+    due today and due later). The last column displays completed tasks. In the left top corner there is 
+    a&nbsp;search engine allowing to look for tasks by the name.`,
 
-    projectPurposeContent3: `&emsp;The purpose was to consolidate and expand knowledge of programming in Django 
-    framework. The base application from <a href="https://www.youtube.com/watch?v=llbtoQTt4qw" class="yt-link" 
-    target="_blank" rel="noopener noreferrer">tutorial</a> was modified and expanded - columns for sorting by 
-    deadline were added. The views was created using Class Based Views technology.`,
+    projectPurposeContent3: `&emsp;The purpose was to consolidate and expand knowledge of programming in 
+    Django framework. The base application from the <a href="https://www.youtube.com/watch?v=llbtoQTt4qw" 
+    class="yt-link" target="_blank" rel="noopener noreferrer">tutorial</a> was modified and expanded 
+    -&nbsp;columns for sorting by deadline were added. The views were created using Class Based Views 
+    technology.`,
 
-    projectAboutContent4: `&emsp;A&nbsp;web application that simulates simply music metronome. You can set the 
-    tempo and meter in the program. Depending on the value of beats per minute (bmp), program displays italian 
-    tempo name. In the application is used timer from <a href="https://www.youtube.com/watch?v=x8PBWobv6NY" 
-    class="yt-link" target="_blank" rel="noopener noreferrer">tutorial</a>.`,
+    projectAboutContent4: `&emsp;A&nbsp;web application that simulates a&nbsp;simple music metronome. 
+    You can set the tempo and the meter in the program. Depending on the value of beats per minute (bmp), 
+    the program displays the Italian tempo name. A&nbsp;timer from a&nbsp;<a 
+    href="https://www.youtube.com/watch?v=x8PBWobv6NY" class="yt-link" target="_blank" rel="noopener 
+    noreferrer">tutorial</a> is used in the application.`,
     
     projectPurposeContent4: `&emsp;The purpose was to learn basics of JavaScript language.`,
 
-    projectAboutContent5: `&emsp;A&nbsp;web application allowing to send songs to database and play in browser. 
-    After creating an account and logging into the administration panel, the user can add songs. In the 
-    song can add the title, artist, cover image and music file. On the main page is player with playlist containing 
-    all added songs. Player allows for play song, go to previous or next song, choose any song from playlist and 
-    rewind by slider. While the music is playing, the application displays current song's title, artist and 
-    cover. After the end of the song, the next song from the playlist starts automatically. After the end of the 
-    last song, player stops.`,
+    projectAboutContent5: `&emsp;A&nbsp;web application allowing to send songs to a&nbsp;database and play 
+    them in a&nbsp;browser. After creating an account and logging into the administration panel, the user 
+    can add songs. For each song they can add the title, artist, cover image and music file. On the main 
+    page there is a&nbsp;player with playlist containing all added songs. The player allows for playing songs, 
+    go to the previous or the next one, choose any song from the playlist and scroll using a&nbsp;slider. While 
+    the music is playing, the application displays current songs&nbsp;title, artist and cover. After the end of 
+    the song, the next song from the playlist starts automatically. After the end of the last song, the player 
+    stops.`,
 
-    projectPurposeContent5: `&emsp;The purpose was to connect learned knowledge of Django and JavaScript programming, 
-    and mix both technologies. Backend of the application uses Django to store database of songs. The database is 
-    passed to the template and assign to variable in JavaScipt as a list of objects including informations about 
-    songs. Written in JavaScript player uses prepared list to play songs on main page.`,
+    projectPurposeContent5: `&emsp;The purpose was to combine the knowledge of Django and JavaScript programming, 
+    and mix both technologies. Backend of the application uses Django to store database of songs. The database is
+    passed to the template and assigned to variable in JavaScipt as a&nbsp;list of objects including information
+    about songs. Written in JavaScript, the player uses a&nbsp;prepared list to play songs on main page.`,
 };
 
 
