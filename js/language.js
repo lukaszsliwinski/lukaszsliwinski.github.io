@@ -93,6 +93,13 @@ const plContent = {
     przechowywania utworów w&nbsp;bazie danych. Baza utworów jest przekazywana do szablonu i przypisywana
     do zmiennej w JavaScript jako lista obiektów przechowujących dane o&nbsp;utworach. Z&nbsp;przygotowanej 
     listy korzysta odtwarzacz na stronie głównej napisany przy użyciu JavaScript.`,
+
+    projectAboutContent6: `&emsp;Aplikacja internetowa pozwalająca na wysłanie maila na dowolny adres. Po uruchomieniu
+    na lokalnym serwerze, w przeglądarce wyświetlany jest formularz zawierający miejsce na tytuł maila, jego treść, oraz
+    adres odbiorcy. Do wysłania wiadomości aplikacja używa uprzednio zdefiniowanego adresu i hasła nadawcy w domenie
+    gmail.com. `,
+
+    projectPurposeContent6: `&emsp;Program został napisany w&nbsp;celu opanowania podstaw Node.js oraz React.`,
 };
 
 // Define english document headers
@@ -186,6 +193,12 @@ const engContent = {
     and mix both technologies. Backend of the application uses Django to store database of songs. The database is
     passed to the template and assigned to variable in JavaScipt as a&nbsp;list of objects including information
     about songs. Written in JavaScript, the player uses a&nbsp;prepared list to play songs on main page.`,
+
+    projectAboutContent6: `&emsp;A&nbsp;web application allowing to send an e-mail to any address. After run
+    on local host, the browser displays contact form for title, message and recipient's address. The app uses
+    previously set gmail account and password to send a message.`,
+
+    projectPurposeContent6: `&emsp;The purpose was to learn basics of Node.js and React.`,
 };
 
 
@@ -201,7 +214,7 @@ function setLanguage() {
 
         // Set polish project details headers (the same value for different ids)
         for (const [key, value] of Object.entries(plProjHeaders)) {
-            for (i=1; i<6; i++) {
+            for (i=1; i<7; i++) {
                 document.getElementById(key + String(i)).innerHTML = value
             };
         };
@@ -214,7 +227,7 @@ function setLanguage() {
         };
         // Set english project details headers (the same value for different ids)
         for (const [key, value] of Object.entries(engProjHeaders)) {
-            for (i=1; i<6; i++) {
+            for (i=1; i<7; i++) {
                 document.getElementById(key + String(i)).innerHTML = value
             };
         };
