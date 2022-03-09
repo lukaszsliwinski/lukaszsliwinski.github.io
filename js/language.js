@@ -209,8 +209,8 @@ const engContent = {
     projectPurposeContent6: `&emsp;The purpose was to learn basics of Node.js and React.`,
 
     projectAboutContent7: `&emsp;A&nbsp;web application for checking actual weather in choosen city. After writing
-    city name, there are shown weather conditions, like temperature, sunset and sunrise time, wind speed, cloudiness,
-    pressure and humidity. An app uses external API from https://openweathermap.org/`,
+    city name, there are shown weather conditions like temperature, sunset and sunrise time, wind speed, cloudiness,
+    pressure and humidity. The app uses external API from https://openweathermap.org/`,
 
     projectPurposeContent7: `&emsp;The purpose was to consolidate basics of Node.js and learn programming with the
     use of an external API.`,
