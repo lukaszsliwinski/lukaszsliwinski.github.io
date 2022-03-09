@@ -100,6 +100,14 @@ const plContent = {
     gmail.com. `,
 
     projectPurposeContent6: `&emsp;Program został napisany w&nbsp;celu opanowania podstaw Node.js oraz React.`,
+
+    projectAboutContent7: `&emsp;Aplikacja internetowa do sprawdzania aktualnej pogody w danym mieście. Po wpisaniu
+    nazwy miasta pojawiają się informacje pogodowe, takie jak temperatura, godzina wschodu i&nbsp;zachodu słońca,
+    prędkość wiatru, zachmurzenie, ciśnienie i&nbsp;wilgotność powietrza. Aplikacja korzysta z&nbsp;zewnętrznego
+    API dostępnego na https://openweathermap.org/`,
+
+    projectPurposeContent7: `&emsp;Program został napisany w&nbsp;celu utrwalenia podstaw Node.js oraz w&nbsp;celu
+    nauki programowania z&nbsp;wykorzystaniem zewnętrznego API.`,
 };
 
 // Define english document headers
@@ -199,6 +207,13 @@ const engContent = {
     previously set gmail account and password to send a message.`,
 
     projectPurposeContent6: `&emsp;The purpose was to learn basics of Node.js and React.`,
+
+    projectAboutContent7: `&emsp;A&nbsp;web application for checking actual weather in choosen city. After writing
+    city name, there are shown weather conditions, like temperature, sunset and sunrise time, wind speed, cloudiness,
+    pressure and humidity. An app uses external API from https://openweathermap.org/`,
+
+    projectPurposeContent7: `&emsp;The purpose was to consolidate basics of Node.js and learn programming with the
+    use of an external API.`,
 };
 
 
@@ -214,7 +229,7 @@ function setLanguage() {
 
         // Set polish project details headers (the same value for different ids)
         for (const [key, value] of Object.entries(plProjHeaders)) {
-            for (i=1; i<7; i++) {
+            for (i=1; i<8; i++) {
                 document.getElementById(key + String(i)).innerHTML = value
             };
         };
@@ -227,7 +242,7 @@ function setLanguage() {
         };
         // Set english project details headers (the same value for different ids)
         for (const [key, value] of Object.entries(engProjHeaders)) {
-            for (i=1; i<7; i++) {
+            for (i=1; i<8; i++) {
                 document.getElementById(key + String(i)).innerHTML = value
             };
         };

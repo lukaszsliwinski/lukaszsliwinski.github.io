@@ -26,11 +26,11 @@
                 Łukasz Śliwiński
             </div>
             <div class="menu">
+                <!-- 3rd classes (introduction, projects, etc.) are for the correct operation of the 
+                highlight navigation menu in script.js -->
                 <a class="nav-btn underline introduction active" href="#introduction" id="menuAboutBtn"></a>
                 <a class="nav-btn underline projects" href="#projects" id="menuProjectsBtn"></a>
                 <a class="nav-btn underline contact" href="#contact" id="menuContactBtn"></a>
-                <!-- 3rd classes (introduction, projects, etc.) are for the correct operation of the 
-                highlight navigation menu in script.js -->
                 <div class="change-lang">
                     <button onclick="changeLanguage('pl')" class="pl-btn">
                         <img class="flag-img" src="images/pl-flag.png" alt="btn">
@@ -515,6 +515,63 @@
                         <h1 class="project-details-header" id="projectSourceHeader6"></h1>
                         <div class="github-link">
                             <a href="https://github.com/lukaszsliwinski/email_sender"
+                            class="project-technology"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <i class="fab fa-github-square"></i>
+                                <p class="project-technology-name">GITHUB</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <!-- Weather app project -->
+                <li class="project">
+                    <div onclick="showHideProject('project7')" class="project-name" id="project7">
+                        Weather App<span class="extend-btn">&#129095;</span>
+                    </div>
+                    <div class="project-details">
+                        <h1 class="project-details-header" id="projectAboutHeader7"></h1>
+                        <article class="project-details-content" id="projectAboutContent7"></article>
+                        <ul class="project-details-screens">
+                            <li>
+                                <a data-lightbox="mygallery" href="screens/weather1.png">
+                                    <img class="project-screen" src="screens/weather1.png" alt="project screen" height="150">
+                                </a>
+                                <a data-lightbox="mygallery" href="screens/weather2.png">
+                                    <img class="project-screen" src="screens/weather2.png" alt="project screen" height="150">
+                                </a>
+                            </li>
+                        </ul>
+                        <h1 class="project-details-header" id="projectPurposeHeader7"></h1>
+                        <article class="project-details-content" id="projectPurposeContent7"></article>
+                        <h1 class="project-details-header" id="projectTechnologiesHeader7"></h1>
+                        <ul class="project-details-technologies">
+                            <li class="project-technology">
+                                <i class="fab fa-js-square"></i>
+                                <p class="project-technology-name">JAVASCRIPT</p>
+                            </li>
+                            <li class="project-technology">
+                                <i class="fab fa-node-js"></i>
+                                <p class="project-technology-name">NODE.JS</p>
+                            </li>
+                            <li class="project-technology">
+                                <i class="fab fa-html5"></i>
+                                <p class="project-technology-name">HTML5</p>
+                            </li>
+                            <li class="project-technology">
+                                <i class="fab fa-css3-alt"></i>
+                                <p class="project-technology-name">CSS3</p>
+                            </li>
+                            <li class="project-technology">
+                                <i class="fab fa-bootstrap"></i>
+                                <p class="project-technology-name">BOOTSTRAP</p>
+                            </li>
+                        </ul>
+                        <h1 class="project-details-header" id="projectSourceHeader7"></h1>
+                        <div class="github-link">
+                            <a href="https://github.com/lukaszsliwinski/weather_app"
                             class="project-technology"
                             target="_blank"
                             rel="noopener noreferrer">
