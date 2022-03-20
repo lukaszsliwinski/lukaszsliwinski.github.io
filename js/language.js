@@ -24,7 +24,7 @@ const plContent = {
     aboutContent: `&emsp;&emsp;&emsp;Jestem początkującym programistą stawiającym pierwsze kroki w&nbsp;tworzeniu 
     aplikacji internetowych. W&nbsp;trakcie samodzielnej nauki poznałem podstawową składnię takich języków jak 
     Python oraz JavaScript. W&nbsp;ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy 
-    tworzenia backend&#8209;u i&nbsp;frontend&#8209;u aplikacji, sposoby komunikacji między nimi, bazy danych, 
+    tworzenia backend&#8209;u i&nbsp;frontend&#8209;u aplikacji, sposoby komunikacji między nimi, 
     tworzenie szablonów responsywnych i&nbsp;system kontroli wersji. Poniżej przedstawiam kilka efektów mojej 
     dotychczasowej nauki. Poszukuję nowych wyzwań, które umożliwią mi dalszy rozwój i&nbsp;poszerzenie praktycznej 
     wiedzy.`,
@@ -135,7 +135,7 @@ const engContent = {
     creating web applications. During selfstudy, I&nbsp;learned the basic syntax of such languages ​​as 
     Python and JavaScript. As part of the practical exercises, I&nbsp;created several applications, 
     learning the basics of creating an application’s backend and frontend, methods of communication 
-    between them, databases, creating responsive templates and version control system. Below 
+    between them, creating responsive templates and version control system. Below 
     I&nbsp;present some effects of my learning process. I&nbsp;am looking for new challenges 
     which will enable me to further develop and expand my practical knowledge.`,
 

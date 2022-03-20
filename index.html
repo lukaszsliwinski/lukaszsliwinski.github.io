@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Łukasz Śliwiński - portfolio</title>
+
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/general.css">
     <link rel="stylesheet" type="text/css" href="css/projects.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+
     <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
 </head>
 <body>
     <div class="main narrower" id="main">
@@ -66,12 +76,20 @@
                     <h1 class="general-header">Frameworks</h1>
                     <ul class="general-list">
                         <li class="general-technology">
-                            <img class="general-icon-img" src="images/kivy.png" alt="icon">
-                            <p class="general-technology-name">KIVY</p>
+                            <img class="general-icon-img" src="images/django.png" alt="icon">
+                            <p class="general-technology-name">DJANGO</p>
                         </li>
                         <li class="general-technology">
-                            <img class="general-icon-img" src="images/django.jpg" alt="icon">
-                            <p class="general-technology-name">DJANGO</p>
+                            <i class="fab fa-node-js"></i>
+                            <p class="general-technology-name">NODE.JS</p>
+                        </li>
+                        <li class="general-technology">
+                            <i class="fab fa-react"></i>
+                            <p class="general-technology-name">REACT</p>
+                        </li>
+                        <li class="general-technology">
+                            <img class="general-icon-img" src="images/kivy.png" alt="icon">
+                            <p class="general-technology-name">KIVY</p>
                         </li>
                     </ul>
                 </div>
@@ -94,6 +112,10 @@
                         <li class="general-technology">
                             <i class="fab fa-git-alt"></i>
                             <p class="general-technology-name">GIT</p>
+                        </li>
+                        <li class="general-technology">
+                            <img class="general-icon-img" src="images/vscode.png" alt="icon">
+                            <p class="general-technology-name">VSCODE</p>
                         </li>
                     </ul>
                 </div>
@@ -123,7 +145,7 @@
                 </div>
 
             </div>
-            <button onclick="showHideGeneral()" class="general-btn" id="general_btn">&lt;&lt;</button>
+            <button onclick="showHideGeneral()" class="general-btn" id="general_btn"><i class="fa-solid fa-angles-left"></i></button>
         </div>
 
         <!-- Introduction section -->
@@ -143,16 +165,21 @@
                 <div class="section-header-icon"><i class="fas fa-laptop-code"></i></div>
                 <span id="projectsHeader"></span>
             </div>
+            <ul class="projects-section-container">
 
-            <!-- List of projects -->
-            <ul class="section-container">
-
-
-                <!-- English dictionary project -->
-                <li class="project">
-                    <div onclick="showHideProject('project1')" class="project-name" id="project1">
-                        English Dictionary<span class="extend-btn">&#129095;</span>
+                <!-- Nav buttons for moving cards with projects -->
+                <div class="projects-nav">
+                    <div class="move-project" onclick="moveProject('previous')">
+                        <i class="fa-solid fa-angles-left"></i>
                     </div>
+                    <div class="move-project" onclick="moveProject('next')">
+                        <i class="fa-solid fa-angles-right"></i>
+                    </div>
+                </div>
+
+                <!-- List of projects-->
+                <li class="project" id="changeable-margin">
+                    <div class="project-name" id="project1">English Dictionary</div>
                     <div class="project-details">
                         <h1 class="project-details-header" id="projectAboutHeader1"></h1>
                         <article class="project-details-content" id=projectAboutContent1></article>
@@ -208,9 +235,7 @@
 
                 <!-- Cooking blog project -->
                 <li class="project">
-                    <div onclick="showHideProject('project2')" class="project-name" id="project2">
-                        Cooking Blog<span class="extend-btn">&#129095;</span>
-                    </div>
+                    <div class="project-name" id="project2">Cooking Blog</div>
                     <div class="project-details">
                         <h1 class="project-details-header" id="projectAboutHeader2"></h1>
                         <article class="project-details-content" id="projectAboutContent2"></article>
@@ -246,7 +271,7 @@
                                 <p class="project-technology-name">PYTHON</p>
                             </li>
                             <li class="project-technology">
-                                <img class="project-icon-img" src="images/django.jpg" alt="icon">
+                                <img class="project-icon-img" src="images/django.png" alt="icon">
                                 <p class="project-technology-name">DJANGO</p>
                             </li>
                             <li class="project-technology">
@@ -286,9 +311,7 @@
 
                 <!-- Task planner project -->
                 <li class="project">
-                    <div onclick="showHideProject('project3')" class="project-name" id="project3">
-                        Task Planner<span class="extend-btn">&#129095;</span>
-                    </div>
+                    <div class="project-name" id="project3">Task Planner</div>
                     <div class="project-details">
                         <h1 class="project-details-header" id="projectAboutHeader3"></h1>
                         <article class="project-details-content" id="projectAboutContent3"></article>
@@ -324,7 +347,7 @@
                                 <p class="project-technology-name">PYTHON</p>
                             </li>
                             <li class="project-technology">
-                                <img class="project-icon-img" src="images/django.jpg" alt="icon">
+                                <img class="project-icon-img" src="images/django.png" alt="icon">
                                 <p class="project-technology-name">DJANGO</p>
                             </li>
                             <li class="project-technology">
@@ -356,9 +379,7 @@
 
                 <!-- Simply metronome project -->
                 <li class="project">
-                    <div onclick="showHideProject('project4')" class="project-name" id="project4">
-                        Simply Metronome<span class="extend-btn">&#129095;</span>
-                    </div>
+                    <div class="project-name" id="project4">Simply Metronome</div>
                     <div class="project-details">
                         <h1 class="project-details-header" id="projectAboutHeader4"></h1>
                         <article class="project-details-content" id="projectAboutContent4"></article>
@@ -407,9 +428,7 @@
 
                 <!-- Music player project -->
                 <li class="project">
-                    <div onclick="showHideProject('project5')" class="project-name" id="project5">
-                        Music Player<span class="extend-btn">&#129095;</span>
-                    </div>
+                    <div class="project-name" id="project5">Music Player</div>
                     <div class="project-details">
                         <h1 class="project-details-header" id="projectAboutHeader5"></h1>
                         <article class="project-details-content" id="projectAboutContent5"></article>
@@ -434,7 +453,7 @@
                                 <p class="project-technology-name">PYTHON</p>
                             </li>
                             <li class="project-technology">
-                                <img class="project-icon-img" src="images/django.jpg" alt="icon">
+                                <img class="project-icon-img" src="images/django.png" alt="icon">
                                 <p class="project-technology-name">DJANGO</p>
                             </li>
                             <li class="project-technology">
@@ -470,9 +489,7 @@
 
                 <!-- E-mail sender project -->
                 <li class="project">
-                    <div onclick="showHideProject('project6')" class="project-name" id="project6">
-                        E-mail Sender<span class="extend-btn">&#129095;</span>
-                    </div>
+                    <div class="project-name" id="project6">E-mail Sender</div>
                     <div class="project-details">
                         <h1 class="project-details-header" id="projectAboutHeader6"></h1>
                         <article class="project-details-content" id="projectAboutContent6"></article>
@@ -528,9 +545,7 @@
 
                 <!-- Weather app project -->
                 <li class="project">
-                    <div onclick="showHideProject('project7')" class="project-name" id="project7">
-                        Weather App<span class="extend-btn">&#129095;</span>
-                    </div>
+                    <div class="project-name" id="project7">Weather App</div>
                     <div class="project-details">
                         <h1 class="project-details-header" id="projectAboutHeader7"></h1>
                         <article class="project-details-content" id="projectAboutContent7"></article>

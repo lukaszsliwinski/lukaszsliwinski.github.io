@@ -1,62 +1,66 @@
 /* Projects section styles */
 
-.project {
+.projects-section-container {
     overflow: hidden;
-    transition: height 0.5s ease;
-    height: fit-content;
-    height: 45px;
+    margin: 0 auto;
+    width: 85%;
+    white-space: nowrap;
 }
 
-.project.extended {
-    height: 570px;
+.move-project {
+    display: inline-block;
+    margin-top: 20px;
+    width: 60px;
+    height: 40px;
+    background-color: black;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.move-project:hover {
+    cursor: pointer;
+    color: var(--main);
+}
+
+
+.project {
+    display: inline-block;
+    transition: margin 0.5s ease;
+    margin: 0 25px;
+    width: 650px;
+    height: fit-content;
+    min-height: 650px;
+}
+
+#changeable-margin {
+    margin-left: 0px;
 }
 
 .project-name {
-    width: 100%;
-    font-size: 25px;
+    margin-top: 15px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: fit-content;
+    padding: 0 15px 5px;
+    background-color: black;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
     font-variant: small-caps;
 }
 
-.project-name:hover {
-    cursor: pointer;
-    color: var(--main);
-}
-
-.project.extended > .project-name {
-    color: var(--main);
-}
-
-.extend-btn {
-    display: inline-block;
-    margin-left: 5px;
-}
-
-.project-name:hover .extend-btn {
-    transform: scale(1.2);
-    transition: transform .1s ease-in-out;
-}
-
 .project-details {
     overflow-x: hidden;
     overflow-y: scroll;
-    scrollbar-color: black transparent;
     scrollbar-width: thin;
-    margin: 15px 2%;
-    border: 2px solid var(--main);
-    border-radius: 10px;
+    scrollbar-color: black transparent;
     box-sizing: border-box;
-    width: 96%;
-    height: 500px;
+    min-width: 96%;
+    height: 600px;
     padding: 1%;
-    background-color: var(--project-background);
-}
-
-@-moz-document url-prefix() {
-    .project-details {
-        border-radius: 0;
-    }
+    background-color: black;
+    white-space: normal;
 }
 
 .project-details::-webkit-scrollbar {
@@ -64,8 +68,7 @@
 }
 
 .project-details::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background: black;
+    background: var(--main);
 }
 
 .project-details::-webkit-scrollbar-track {

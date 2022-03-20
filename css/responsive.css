@@ -71,9 +71,46 @@
     }
 }
 
+
+/* Change photo dimensions with height under 650px */
+
 @media screen and (max-height: 650px) {
     .photo {
         width: 120px;
         height: 120px;
+    }
+}
+
+
+/* Change project cards style with width under 1250px and 550px */
+
+@media screen and (max-width: 1250px) {
+    .project {
+        width: 450px;
+        min-height: 450px;
+        font-size: 14px;
+    }
+
+    .project-name {
+        font-size: 24px;
+    }
+
+    .project-details {
+        height: 400px;
+    }
+
+    .project-details-header {
+        font-size: 16px;
+    }
+
+    .project-technology,
+    .github-link {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .project {
+        width: 260px;
     }
 }
