@@ -83,7 +83,7 @@
 }
 
 
-/* Change project cards style with width under 1250px and 550px */
+/* Change project cards style with width under 1250px and 640px */
 
 @media screen and (max-width: 1250px) {
     .project {
@@ -103,37 +103,9 @@
 
     }
 
-    .project-links-wrapper {
-        flex-direction: column;
-        justify-content: center;
-        transition: all 0.7s ease;
-        width: 80px;
-        height: 70px;
-    }
-
-    .project-link-container {
-        justify-content: flex-start;
-        align-items: center;
-        transition: all 0.7s ease;
-        width: 75px;
-        height: 26px;
-    }
-
-    .project-link {
-        transition: all 0.7s ease;
-        margin: 3px 0 0;
-        border-radius: 10px;
-        height: fit-content;
-        font-size: 14px;
-    }
-
-    .project-link-name {
-        transition: all 0.7s ease;
-        font-size: 12px;
-    }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 640px) {
     .project {
         min-height: 0;
     }
@@ -191,5 +163,34 @@
 
     .project-screen {
         display: none;
+    }
+
+    .project-links-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.7s ease;
+        width: 80px;
+        height: 70px;
+    }
+
+    .project-link-container {
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 0.7s ease;
+        width: 75px;
+        height: 26px;
+    }
+
+    .project-link {
+        transition: all 0.7s ease;
+        margin: 3px 0 0;
+        border-radius: 10px;
+        height: fit-content;
+        font-size: 14px;
+    }
+
+    .project-link-name {
+        transition: all 0.7s ease;
+        font-size: 12px;
     }
 }
