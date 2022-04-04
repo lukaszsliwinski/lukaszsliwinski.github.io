@@ -224,6 +224,7 @@ ReactDOM.render(
                 <ProjectTechnologyFA fa="fab fa-html5" technology="HTML5" />
                 <ProjectTechnologyFA fa="fab fa-css3" technology="CSS3" />
                 <ProjectTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
+                <ProjectTechnologyFA fa="fas fa-mobile-alt" technology="RWD" />
             </ProjectTechnologiesList>
             <ProjectDetails id="projectDetails3" />
             <ProjectScreen src="screens/weather.png" />
@@ -245,6 +246,7 @@ ReactDOM.render(
                 <ProjectTechnologyFA fa="fab fa-html5" technology="HTML5" />
                 <ProjectTechnologyFA fa="fab fa-css3" technology="CSS3" />
                 <ProjectTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
+                <ProjectTechnologyFA fa="fas fa-mobile-alt" technology="RWD" />
             </ProjectTechnologiesList>
             <ProjectDetails id="projectDetails4" />
             <ProjectScreen src="screens/email.png" />
