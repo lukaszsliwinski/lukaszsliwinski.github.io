@@ -6,8 +6,13 @@
     justify-content: space-between;
     align-items: flex-start;
     display: flex;
+    -webkit-box-shadow: 8px 5px 20px -1px var(--shadow);
+    -moz-box-shadow: 8px 5px 20px -1px var(--shadow);
+    box-shadow: 8px 5px 20px -1px var(--shadow);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     width: 400px;
-    height: 100vh;
+    height: 98vh;
     background-color: black;
 }
 

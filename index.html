@@ -14,9 +14,6 @@
     <link rel="stylesheet" type="text/css" href="css/projects.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-
-    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
 
     <!-- Font Awesome -->
     <link 
@@ -26,15 +23,23 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
+    <!-- React for development-->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- React for production-->
+    <!-- <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script> -->
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
 </head>
 <body>
     <div class="main narrower" id="main">
 
         <!-- Navigation menu -->
         <header>
-            <div class="name">
-                Łukasz Śliwiński
-            </div>
+            <div class="name">Łukasz Śliwiński</div>
             <div class="menu">
                 <!-- 3rd classes (introduction, projects, etc.) are for the correct operation of the 
                 highlight navigation menu in script.js -->
@@ -42,10 +47,10 @@
                 <a class="nav-btn underline projects" href="#projects" id="menuProjectsBtn"></a>
                 <a class="nav-btn underline contact" href="#contact" id="menuContactBtn"></a>
                 <div class="change-lang">
-                    <button onclick="changeLanguage('pl')" class="pl-btn">
+                    <button onclick="setLanguage('pl')" class="pl-btn">
                         <img class="flag-img" src="images/pl-flag.png" alt="btn">
                     </button>
-                    <button onclick="changeLanguage('eng')" class="eng-btn">
+                    <button onclick="setLanguage('eng')" class="eng-btn">
                         <img class="flag-img" src="images/eng-flag.png" alt="btn">
                     </button>
                 </div>
@@ -55,105 +60,18 @@
         <!-- General information area -->
         <div class="general visible" id="general">
             <div class="general-details">
-                
                 <img class="photo" src="images/photo.jpg" alt="profile photo">
-
-                <div class="general-wrapper">
-                    <h1 class="general-header">Languages</h1>
-                    <ul class="general-list">
-                        <li class="general-technology">
-                            <i class="fab fa-python"></i>
-                            <p class="general-technology-name">PYTHON</p>
-                        </li>
-                        <li class="general-technology">
-                            <i class="fab fa-js-square"></i>
-                            <p class="general-technology-name">JAVASCRIPT</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="general-wrapper">
-                    <h1 class="general-header">Frameworks</h1>
-                    <ul class="general-list">
-                        <li class="general-technology">
-                            <img class="general-icon-img" src="images/django.png" alt="icon">
-                            <p class="general-technology-name">DJANGO</p>
-                        </li>
-                        <li class="general-technology">
-                            <i class="fab fa-node-js"></i>
-                            <p class="general-technology-name">NODE.JS</p>
-                        </li>
-                        <li class="general-technology">
-                            <i class="fab fa-react"></i>
-                            <p class="general-technology-name">REACT</p>
-                        </li>
-                        <li class="general-technology">
-                            <img class="general-icon-img" src="images/kivy.png" alt="icon">
-                            <p class="general-technology-name">KIVY</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="general-wrapper">
-                    <h1 class="general-header">Other</h1>
-                    <ul class="general-list">
-                        <li class="general-technology">
-                            <i class="fab fa-html5"></i>
-                            <p class="general-technology-name">HTML5</p>
-                        </li>
-                        <li class="general-technology">
-                            <i class="fab fa-css3-alt"></i>
-                            <p class="general-technology-name">CSS3</p>
-                        </li>
-                        <li class="general-technology">
-                            <i class="fas fa-mobile-alt"></i>
-                            <p class="general-technology-name">RESPONSIVE WEB DESIGN</p>
-                        </li>
-                        <li class="general-technology">
-                            <i class="fab fa-git-alt"></i>
-                            <p class="general-technology-name">GIT</p>
-                        </li>
-                        <li class="general-technology">
-                            <img class="general-icon-img" src="images/vscode.png" alt="icon">
-                            <p class="general-technology-name">VSCODE</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="general-wrapper">
-                    <h1 class="general-header">Links</h1>
-                    <ul class="general-list">
-                        <li>
-                            <a href="https://github.com/lukaszsliwinski/"
-                            class="general-link"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                                <i class="fab fa-github-square"></i>
-                                <p class="general-link-name">github</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/lsliwinski/"
-                            class="general-link"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                                <i class="fab fa-linkedin"></i>
-                                <p class="general-link-name">linkedin</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
+                <div id="general1"></div>
+                <div id="general2"></div>
+                <div id="general3"></div>
+                <div id="general4"></div>
             </div>
             <button onclick="showHideGeneral()" class="general-btn" id="general_btn"><i class="fa-solid fa-angles-left"></i></button>
         </div>
 
         <!-- Introduction section -->
         <section class="introduction-section" id="introduction">
-            <div class="section-header">
-                <div class="section-header-icon"><i class="fas fa-user-alt"></i></div>
-                <span id="aboutHeader"></span>
-            </div>
+            <div id="header1"></div>
             <div class="section-container">
                 <article class="about-data" id="aboutContent"></article>
             </div>
@@ -161,486 +79,27 @@
 
         <!-- Projects section -->
         <section class="projects-section" id="projects">
-            <div class="section-header">
-                <div class="section-header-icon"><i class="fas fa-laptop-code"></i></div>
-                <span id="projectsHeader"></span>
+            <div id="header2"></div>
+            <div class="projects-section-wrapper">
+                <div class="project" id="project1"></div>
+                <div class="project" id="project2"></div>
+                <div class="project" id="project3"></div>
+                <div class="project" id="project4"></div>
+                <div class="project" id="project5"></div>
             </div>
-            <ul class="projects-section-container">
-
-                <!-- Nav buttons for moving cards with projects -->
-                <div class="projects-nav">
-                    <div class="move-project" onclick="moveProject('previous')">
-                        <i class="fa-solid fa-angles-left"></i>
-                    </div>
-                    <div class="move-project" onclick="moveProject('next')">
-                        <i class="fa-solid fa-angles-right"></i>
-                    </div>
-                </div>
-
-                <!-- List of projects-->
-                <li class="project" id="changeable-margin">
-                    <div class="project-name" id="project1">English Dictionary</div>
-                    <div class="project-details">
-                        <h1 class="project-details-header" id="projectAboutHeader1"></h1>
-                        <article class="project-details-content" id=projectAboutContent1></article>
-                        <ul class="project-details-screens">
-                            <li>
-                                <a data-lightbox="mygallery" href="screens/english1.png">
-                                    <img class="project-screen" src="screens/english1.png" alt="project screen" height="250">
-                                </a>
-                            </li>
-                            <li class="project-screen">
-                                <a data-lightbox="mygallery" href="screens/english2.png">
-                                    <img class="project-screen" src="screens/english2.png" alt="project screen" height="250">
-                                </a>
-
-                            </li>
-                            <li class="project-screen">
-                                <a data-lightbox="mygallery" href="screens/english3.png">
-                                    <img class="project-screen" src="screens/english3.png" alt="project screen" height="250">
-                                </a>
-                            </li>
-                            <li class="project-screen">
-                                <a data-lightbox="mygallery" href="screens/english4.png">
-                                    <img class="project-screen" src="screens/english4.png" alt="project screen" height="250">
-                                </a>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectPurposeHeader1"></h1>
-                        <article class="project-details-content" id="projectPurposeContent1"></article>
-                        <h1 class="project-details-header" id="projectTechnologiesHeader1"></h1>
-                        <ul class="project-details-technologies">
-                            <li class="project-technology">
-                                <i class="fab fa-python"></i>
-                                <p class="project-technology-name">PYTHON</p>
-                            </li>
-                            <li class="project-technology">
-                                <img class="project-icon-img" src="images/kivy.png" alt="icon">
-                                <p class="project-technology-name">KIVY</p>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectSourceHeader1"></h1>
-                        <div class="github-link">
-                            <a href="https://github.com/lukaszsliwinski/english_dictionary_kivy"
-                            class="project-technology"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                                <i class="fab fa-github-square"></i>
-                                <p class="project-technology-name">GITHUB</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-
-
-                <!-- Cooking blog project -->
-                <li class="project">
-                    <div class="project-name" id="project2">Cooking Blog</div>
-                    <div class="project-details">
-                        <h1 class="project-details-header" id="projectAboutHeader2"></h1>
-                        <article class="project-details-content" id="projectAboutContent2"></article>
-                        <ul class="project-details-screens">
-                            <li>
-                                <a data-lightbox="mygallery" href="screens/cooking1.png">
-                                    <img class="project-screen" src="screens/cooking1.png" alt="project screen" height="150">
-                                </a>
-                            </li>
-                            <li class="project-screen">
-                                <a data-lightbox="mygallery" href="screens/cooking2.png">
-                                    <img class="project-screen" src="screens/cooking2.png" alt="project screen" height="150">
-                                </a>
-
-                            </li>
-                            <li class="project-screen">
-                                <a data-lightbox="mygallery" href="screens/cooking3.png">
-                                    <img class="project-screen" src="screens/cooking3.png" alt="project screen" height="150">
-                                </a>
-                            </li>
-                            <li class="project-screen">
-                                <a data-lightbox="mygallery" href="screens/cooking4.png">
-                                    <img class="project-screen" src="screens/cooking4.png" alt="project screen" height="150">
-                                </a>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectPurposeHeader2"></h1>
-                        <article class="project-details-content" id="projectPurposeContent2"></article>
-                        <h1 class="project-details-header" id="projectTechnologiesHeader2"></h1>
-                        <ul class="project-details-technologies">
-                            <li class="project-technology">
-                                <i class="fab fa-python"></i>
-                                <p class="project-technology-name">PYTHON</p>
-                            </li>
-                            <li class="project-technology">
-                                <img class="project-icon-img" src="images/django.png" alt="icon">
-                                <p class="project-technology-name">DJANGO</p>
-                            </li>
-                            <li class="project-technology">
-                                <img class="project-icon-img" src="images/sqlite.png" alt="icon">
-                                <p class="project-technology-name">SQLITE</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-html5"></i>
-                                <p class="project-technology-name">HTML5</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-css3-alt"></i>
-                                <p class="project-technology-name">CSS3</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-js-square"></i>
-                                <p class="project-technology-name">JAVASCRIPT</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fas fa-mobile-alt"></i>
-                                <p class="project-technology-name">RWD</p>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectSourceHeader2"></h1>
-                        <div class="github-link">
-                            <a href="https://github.com/lukaszsliwinski/cooking_blog"
-                            class="project-technology"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                                <i class="fab fa-github-square"></i>
-                                <p class="project-technology-name">GITHUB</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-
-
-                <!-- Task planner project -->
-                <li class="project">
-                    <div class="project-name" id="project3">Task Planner</div>
-                    <div class="project-details">
-                        <h1 class="project-details-header" id="projectAboutHeader3"></h1>
-                        <article class="project-details-content" id="projectAboutContent3"></article>
-                        <ul class="project-details-screens">
-                            <li>
-                                <a data-lightbox="mygallery" href="screens/task1.png">
-                                    <img class="project-screen" src="screens/task1.png" alt="project screen" height="150">
-                                </a>
-                            </li>
-                            <li class="project-screen">
-                                <a data-lightbox="mygallery" href="screens/task2.png">
-                                    <img class="project-screen" src="screens/task2.png" alt="project screen" height="150">
-                                </a>
-
-                            </li>
-                            <li class="project-screen">
-                                <a data-lightbox="mygallery" href="screens/task3.png">
-                                    <img class="project-screen" src="screens/task3.png" alt="project screen" height="150">
-                                </a>
-                            </li>
-                            <li class="project-screen">
-                                <a data-lightbox="mygallery" href="screens/task4.png">
-                                    <img class="project-screen" src="screens/task4.png" alt="project screen" height="150">
-                                </a>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectPurposeHeader3"></h1>
-                        <article class="project-details-content" id="projectPurposeContent3"></article>
-                        <h1 class="project-details-header" id="projectTechnologiesHeader3"></h1>
-                        <ul class="project-details-technologies">
-                            <li class="project-technology">
-                                <i class="fab fa-python"></i>
-                                <p class="project-technology-name">PYTHON</p>
-                            </li>
-                            <li class="project-technology">
-                                <img class="project-icon-img" src="images/django.png" alt="icon">
-                                <p class="project-technology-name">DJANGO</p>
-                            </li>
-                            <li class="project-technology">
-                                <img class="project-icon-img" src="images/sqlite.png" alt="icon">
-                                <p class="project-technology-name">SQLITE</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-html5"></i>
-                                <p class="project-technology-name">HTML5</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-css3-alt"></i>
-                                <p class="project-technology-name">CSS3</p>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectSourceHeader3"></h1>
-                        <div class="github-link">
-                            <a href="https://github.com/lukaszsliwinski/task_planner"
-                            class="project-technology"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                                <i class="fab fa-github-square"></i>
-                                <p class="project-technology-name">GITHUB</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-
-
-                <!-- Simply metronome project -->
-                <li class="project">
-                    <div class="project-name" id="project4">Simply Metronome</div>
-                    <div class="project-details">
-                        <h1 class="project-details-header" id="projectAboutHeader4"></h1>
-                        <article class="project-details-content" id="projectAboutContent4"></article>
-                        <ul class="project-details-screens">
-                            <li>
-                                <a data-lightbox="mygallery" href="screens/metronome1.png">
-                                    <img class="project-screen" src="screens/metronome1.png" alt="project screen" height="150">
-                                </a>
-                            </li>
-                            <li class="project-screen">
-                                <a data-lightbox="mygallery" href="screens/metronome2.png">
-                                    <img class="project-screen" src="screens/metronome2.png" alt="project screen" height="150">
-                                </a>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectPurposeHeader4"></h1>
-                        <article class="project-details-content" id="projectPurposeContent4"></article>
-                        <h1 class="project-details-header" id="projectTechnologiesHeader4"></h1>
-                        <ul class="project-details-technologies">
-                            <li class="project-technology">
-                                <i class="fab fa-html5"></i>
-                                <p class="project-technology-name">HTML5</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-css3-alt"></i>
-                                <p class="project-technology-name">CSS3</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-js-square"></i>
-                                <p class="project-technology-name">JAVASCRIPT</p>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectSourceHeader4"></h1>
-                        <div class="github-link">
-                            <a href="https://github.com/lukaszsliwinski/simply_metronome"
-                            class="project-technology"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                                <i class="fab fa-github-square"></i>
-                                <p class="project-technology-name">GITHUB</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-
-
-                <!-- Music player project -->
-                <li class="project">
-                    <div class="project-name" id="project5">Music Player</div>
-                    <div class="project-details">
-                        <h1 class="project-details-header" id="projectAboutHeader5"></h1>
-                        <article class="project-details-content" id="projectAboutContent5"></article>
-                        <ul class="project-details-screens">
-                            <li>
-                                <a data-lightbox="mygallery" href="screens/player1.png">
-                                    <img class="project-screen" src="screens/player1.png" alt="project screen" height="150">
-                                </a>
-                            </li>
-                            <li class="project-screen">
-                                <a data-lightbox="mygallery" href="screens/player2.png">
-                                    <img class="project-screen" src="screens/player2.png" alt="project screen" height="150">
-                                </a>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectPurposeHeader5"></h1>
-                        <article class="project-details-content" id="projectPurposeContent5"></article>
-                        <h1 class="project-details-header" id="projectTechnologiesHeader5"></h1>
-                        <ul class="project-details-technologies">
-                            <li class="project-technology">
-                                <i class="fab fa-python"></i>
-                                <p class="project-technology-name">PYTHON</p>
-                            </li>
-                            <li class="project-technology">
-                                <img class="project-icon-img" src="images/django.png" alt="icon">
-                                <p class="project-technology-name">DJANGO</p>
-                            </li>
-                            <li class="project-technology">
-                                <img class="project-icon-img" src="images/sqlite.png" alt="icon">
-                                <p class="project-technology-name">SQLITE</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-html5"></i>
-                                <p class="project-technology-name">HTML5</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-css3-alt"></i>
-                                <p class="project-technology-name">CSS3</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-js-square"></i>
-                                <p class="project-technology-name">JAVASCRIPT</p>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectSourceHeader5"></h1>
-                        <div class="github-link">
-                            <a href="https://github.com/lukaszsliwinski/music_player"
-                            class="project-technology"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                                <i class="fab fa-github-square"></i>
-                                <p class="project-technology-name">GITHUB</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-
-
-                <!-- E-mail sender project -->
-                <li class="project">
-                    <div class="project-name" id="project6">E-mail Sender</div>
-                    <div class="project-details">
-                        <h1 class="project-details-header" id="projectAboutHeader6"></h1>
-                        <article class="project-details-content" id="projectAboutContent6"></article>
-                        <ul class="project-details-screens">
-                            <li>
-                                <a data-lightbox="mygallery" href="screens/email.png">
-                                    <img class="project-screen" src="screens/email.png" alt="project screen" height="150">
-                                </a>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectPurposeHeader6"></h1>
-                        <article class="project-details-content" id="projectPurposeContent6"></article>
-                        <h1 class="project-details-header" id="projectTechnologiesHeader6"></h1>
-                        <ul class="project-details-technologies">
-                            <li class="project-technology">
-                                <i class="fab fa-js-square"></i>
-                                <p class="project-technology-name">JAVASCRIPT</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-node-js"></i>
-                                <p class="project-technology-name">NODE.JS</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-react"></i>
-                                <p class="project-technology-name">REACT</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-html5"></i>
-                                <p class="project-technology-name">HTML5</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-css3-alt"></i>
-                                <p class="project-technology-name">CSS3</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-bootstrap"></i>
-                                <p class="project-technology-name">BOOTSTRAP</p>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectSourceHeader6"></h1>
-                        <div class="github-link">
-                            <a href="https://github.com/lukaszsliwinski/email_sender"
-                            class="project-technology"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                                <i class="fab fa-github-square"></i>
-                                <p class="project-technology-name">GITHUB</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-
-
-                <!-- Weather app project -->
-                <li class="project">
-                    <div class="project-name" id="project7">Weather App</div>
-                    <div class="project-details">
-                        <h1 class="project-details-header" id="projectAboutHeader7"></h1>
-                        <article class="project-details-content" id="projectAboutContent7"></article>
-                        <ul class="project-details-screens">
-                            <li>
-                                <a data-lightbox="mygallery" href="screens/weather1.png">
-                                    <img class="project-screen" src="screens/weather1.png" alt="project screen" height="150">
-                                </a>
-                                <a data-lightbox="mygallery" href="screens/weather2.png">
-                                    <img class="project-screen" src="screens/weather2.png" alt="project screen" height="150">
-                                </a>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectPurposeHeader7"></h1>
-                        <article class="project-details-content" id="projectPurposeContent7"></article>
-                        <h1 class="project-details-header" id="projectTechnologiesHeader7"></h1>
-                        <ul class="project-details-technologies">
-                            <li class="project-technology">
-                                <i class="fab fa-js-square"></i>
-                                <p class="project-technology-name">JAVASCRIPT</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-node-js"></i>
-                                <p class="project-technology-name">NODE.JS</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-html5"></i>
-                                <p class="project-technology-name">HTML5</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-css3-alt"></i>
-                                <p class="project-technology-name">CSS3</p>
-                            </li>
-                            <li class="project-technology">
-                                <i class="fab fa-bootstrap"></i>
-                                <p class="project-technology-name">BOOTSTRAP</p>
-                            </li>
-                        </ul>
-                        <h1 class="project-details-header" id="projectSourceHeader7"></h1>
-                        <div class="github-link">
-                            <a href="https://github.com/lukaszsliwinski/weather_app"
-                            class="project-technology"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                                <i class="fab fa-github-square"></i>
-                                <p class="project-technology-name">GITHUB</p>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
         </section>
 
-
-
-        
         <!-- Contact section -->
         <section class="contact-section" id="contact">
-            <div class="section-header">
-                <div class="section-header-icon"><i class="fas fa-address-card"></i></div>
-                <span id="contactHeader"></span>
-            </div>
+            <div id="header3"></div>
             <div class="section-container">
-                <ul>
-                    <li class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p class="contact-data">lukaszsliwinski0@gmail.com</p>
-                    </li>
-                    <li class="contact-item">
-                        <i class="fas fa-phone-square-alt"></i>
-                        <p class="contact-data">+48 660 861 768</p>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/lsliwinski/"
-                        class="contact-item contact-link"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                            <i class="fab fa-linkedin"></i>
-                            <p class="contact-data">linkedin</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/lukaszsliwinski/"
-                        class="contact-item contact-link"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                            <i class="fab fa-github-square"></i>
-                            <p class="contact-data">github</p>
-                        </a>
-                    </li>
-                </ul>
+                <div id="contacts"></div>
             </div>
         </section>
     </div>
+
+    <script type="text/javascript" src="js/func.js"></script>
+    <script type="text/babel" src="js/app.js"></script>
     <script type="text/javascript" src="js/language.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

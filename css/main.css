@@ -5,8 +5,10 @@
 /* colors */
 :root {
     --main: #b29155;
+    --main-darker: #3f3520;
     --background: #141414;
     --text: #acacac;
+    --shadow: rgba(0, 0, 0, 0.65);
 }
 
 
@@ -61,15 +63,15 @@ section {
 }
 
 .section-header {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
     margin-left: 25px;
     width: fit-content;
     padding: 90px 10px 0;
     font-size: 60px;
     font-weight: 600;
     font-variant: small-caps;
-    flex-direction: row;
-    align-items: center;
-    display: flex;
 }
 
 .section-header-icon {

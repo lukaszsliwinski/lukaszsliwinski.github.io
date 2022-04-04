@@ -1,120 +1,122 @@
 /* Projects section styles */
 
-.projects-section-container {
-    overflow: hidden;
+.projects-section-wrapper {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
     margin: 0 auto;
-    width: 85%;
-    white-space: nowrap;
+    width: 95%;
 }
 
-.move-project {
-    display: inline-block;
-    margin-top: 20px;
-    width: 60px;
-    height: 40px;
-    background-color: black;
-    font-size: 35px;
-    line-height: 40px;
-    text-align: center;
+.wider .project-section-wrapper {
+    width: 100%;
 }
 
-.move-project:hover {
-    cursor: pointer;
-    color: var(--main);
-}
 
+/* card with project */
 
 .project {
     display: inline-block;
-    transition: margin 0.5s ease;
     margin: 0 25px;
-    width: 650px;
+    -webkit-box-shadow: 8px 5px 20px -1px var(--shadow);
+    -moz-box-shadow: 8px 5px 20px -1px var(--shadow);
+    box-shadow: 8px 5px 20px -1px var(--shadow);
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 40px;
     height: fit-content;
-    min-height: 650px;
-}
-
-#changeable-margin {
-    margin-left: 0px;
-}
-
-.project-name {
-    margin-top: 15px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    width: fit-content;
-    padding: 0 15px 5px;
+    padding: 1% 2%;
     background-color: black;
-    font-size: 30px;
+    white-space: normal;
+}
+
+
+/* cards width dependent on general inf area display */
+
+.wider .project {
+    transition: width 0.7s ease;
+    width: 45%;
+}
+
+.narrower .project {
+    transition: width 0.7s ease;
+    width: 85%;
+    max-width: 850px;
+}
+
+
+/* project header block */
+
+.project-header {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    height: 50px;
+    background-color: black;
     font-weight: 600;
     text-align: center;
     font-variant: small-caps;
 }
 
-.project-details {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: black transparent;
-    box-sizing: border-box;
-    min-width: 96%;
-    height: 600px;
-    padding: 1%;
-    background-color: black;
-    white-space: normal;
+.project-name {
+    margin: 0 0 7px 10px;
+    font-size: 35px;
 }
 
-.project-details::-webkit-scrollbar {
-    width: 8px;
-}
-
-.project-details::-webkit-scrollbar-thumb {
-    background: var(--main);
-}
-
-.project-details::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.project-details-header {
-    margin-top: 20px;
-    width: 100%;
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.project-details-content {
-    margin: 15px 10px 0;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.yt-link {
-    text-decoration: underline;
-}
-
-.yt-link:hover {
-    color: var(--main);
-    text-decoration: underline;
-}
-
-.project-details-screens {
+.project-links-list {
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: space-between;
-    justify-content: space-around;
+    align-items: center;
     display: flex;
-    margin-top: 20px;
 }
 
-.project-screen:hover {
-    transform: scale(1.02);
-    transition: transform .2s linear;
-    cursor: zoom-in;
+.project-links-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 210px;
+
 }
 
-.project-details-technologies {
+.project-link-container {
+    justify-content: center;
+    display: flex;
+    width: 100px;
+}
+
+.project-link {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    margin: 10px 5px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 3px 5px;
+    background-color: var(--main);
+    font-size: 20px;
+    color: black;
+}
+
+.project-link:hover {
+    transition: all .08s linear;
+    padding: 4px 6px;
+    color: var(--main-darker);
+}
+
+.project-link:focus {
+    color: black;
+}
+
+.project-link-name {
+    font-size: 16px;
+}
+
+
+/* project technologies block */
+
+.project-technologies-list {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -126,29 +128,57 @@
     flex-direction: row;
     align-items: center;
     display: flex;
-    margin: 10px;
-    font-size: 35px;
+    margin: 5px 10px;
+    font-size: 25px;
 }
 
 .project-technology-name {
     display: block;
     margin-left: 5px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
 }
 
 .project-icon-img {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 }
 
-.github-link {
-    flex-direction: row;
-    align-items: center;
+
+/* project details block */
+
+.project-details {
+    padding: 0 3%;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    letter-spacing: 1px;
+}
+
+.yt-link {
+    text-decoration: underline;
+}
+
+.yt-link:hover {
+    color: var(--main);
+    text-decoration: underline;
+}
+
+
+/* project screen block */
+
+.project-screen {
     justify-content: center;
     display: flex;
 }
 
-.github-link a:hover {
-    color: var(--main);
+
+/* line dividing blocks */
+.project-header,
+.project-technologies-list,
+.project-details {
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--main);
+    padding-bottom: 20px;
 }
