@@ -30,7 +30,7 @@ function GeneralLink(props) {
     return (
         <li>
             <a href={props.link} className="general-link" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-github-square"></i><p className="general-link-name">{props.name}</p>
+                <i className={props.fa}></i><p className="general-link-name">{props.name}</p>
             </a>
         </li>
 )};
@@ -136,17 +136,19 @@ ReactDOM.render(
     <GeneralWrapper header="Other">
         <GeneralTechnologyFA fa="fab fa-html5" technology="HTML5" />
         <GeneralTechnologyFA fa="fab fa-css3-alt" technology="CSS3" />
+        <GeneralTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
         <GeneralTechnologyFA fa="fas fa-mobile-alt" technology="RESPONSIVE WEB DESIGN" />
         <GeneralTechnologyFA fa="fab fa-git-alt" technology="GIT" />
-        <GeneralTechnologyImg src="images/vscode.png" technology="VISUAL STUDIO CODE" />
+        <GeneralTechnologyImg src="images/vscode.png" technology="VS CODE" />
+        <GeneralTechnologyImg src="images/postman.png" technology="POSTMAN API" />
     </GeneralWrapper>,
     document.getElementById('general3')
 )
 
 ReactDOM.render(
     <GeneralWrapper header="Links">
-        <GeneralLink link="https://github.com/lukaszsliwinski/" name="github" />
-        <GeneralLink link="https://www.linkedin.com/in/lsliwinski/" name="linkedin" />
+        <GeneralLink link="https://github.com/lukaszsliwinski/" fa="fab fa-github-square" name="github" />
+        <GeneralLink link="https://www.linkedin.com/in/lsliwinski/" fa="fab fa-linkedin" name="linkedin" />
     </GeneralWrapper>,
     document.getElementById('general4')
 )
