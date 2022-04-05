@@ -47,7 +47,7 @@ const plContent = {
     projectDetails4: `&emsp;Aplikacja internetowa pozwalająca na wysłanie maila na dowolny adres. Po uruchomieniu
     na lokalnym serwerze, w przeglądarce wyświetlany jest formularz zawierający miejsce na tytuł maila, jego treść, oraz
     adres odbiorcy. Do wysłania wiadomości aplikacja używa uprzednio zdefiniowanego adresu i hasła nadawcy w domenie
-    gmail.com. `,
+    outlook.com. `,
 
     projectDetails5: `&emsp;Aplikacja internetowa symulująca działanie prostego metronomu. W&nbsp;programie 
     można ustawić tempo oraz metrum. W&nbsp;zależności od ilości uderzeń na minutę (bpm), program podaje włoską 
@@ -99,7 +99,7 @@ const engContent = {
 
     projectDetails4: `&emsp;A&nbsp;web application allowing to send an e-mail to any address. After run
     on local host, the browser displays contact form for title, message and recipient's address. The app uses
-    previously set gmail account and password to send a message.`,
+    previously set outlook account and password to send a message.`,
 
     projectDetails5: `&emsp;A&nbsp;web application that simulates a&nbsp;simple music metronome. 
     You can set the tempo and the meter in the program. Depending on the value of beats per minute (bmp), 
