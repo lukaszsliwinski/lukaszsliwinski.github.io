@@ -29,8 +29,8 @@ function GeneralTechnologyImg(props) {
 function GeneralLink(props) {
     return (
         <li>
-            <a href={props.link} class="general-link" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github-square"></i><p class="general-link-name">{props.name}</p>
+            <a href={props.link} className="general-link" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github-square"></i><p className="general-link-name">{props.name}</p>
             </a>
         </li>
 )};
@@ -40,7 +40,7 @@ function GeneralLink(props) {
 
 function SectionHeader(props) {
     return (
-        <div class="section-header">
+        <div className="section-header">
             <div className="section-header-icon"><i className={props.fa}></i></div><span id={props.id}></span>
         </div>
 )};
@@ -98,7 +98,7 @@ function ProjectScreen(props) {
 // Contact components
 function Contacts(props) { return <ul>{props.children}</ul> };
 
-function ContactItem(props) { return <li class="contact-item"><i class={props.fa}></i><p class="contact-data">{props.data}</p></li> };
+function ContactItem(props) { return <li className="contact-item"><i className={props.fa}></i><p className="contact-data">{props.data}</p></li> };
 
 function ContactLink(props) {
     return (
