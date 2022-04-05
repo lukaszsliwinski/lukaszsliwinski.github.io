@@ -287,4 +287,4 @@ ReactDOM.render(
 
 
 // Initial language statement after redner all components
-setLanguage('pl');
+setLanguage('eng');
