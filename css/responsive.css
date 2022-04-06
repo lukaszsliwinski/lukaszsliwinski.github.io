@@ -47,6 +47,10 @@
         display: none;
     }
 
+    .general-details > div {
+        width: fit-content;
+    }
+
     .general-wrapper {
         width: 260px;
     }
