@@ -62,8 +62,8 @@
 .photo {
     margin: 80px 0 10px;
     border-radius: 50%;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
 }
 
 .general-details > div {
@@ -94,18 +94,18 @@
     align-items: center;
     display: flex;
     margin: 5px 10px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .general-technology-name {
     display: block;
     margin-left: 5px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .general-icon-img {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 
 .general-link {
@@ -113,7 +113,7 @@
     align-items: center;
     display: flex;
     margin: 5px 10px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .general-link:hover {
@@ -123,5 +123,5 @@
 .general-link-name {
     display: inline-block;
     margin-left: 5px;
-    font-size: 16px;
+    font-size: 14px;
 }

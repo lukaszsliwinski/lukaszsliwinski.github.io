@@ -125,8 +125,9 @@ ReactDOM.render(
 ReactDOM.render(
     <GeneralWrapper header="Frameworks">
         <GeneralTechnologyImg src="images/django.png" technology="DJANGO" />
-        <GeneralTechnologyFA fa="fab fa-node-js" technology="NODE.JS" />
+        <GeneralTechnologyImg src="images/express.png" technology="EXPRESS" />
         <GeneralTechnologyFA fa="fab fa-react" technology="REACT" />
+        <GeneralTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
         <GeneralTechnologyImg src="images/kivy.png" technology="KIVY" />
     </GeneralWrapper>,
     document.getElementById('general2')
@@ -134,10 +135,10 @@ ReactDOM.render(
 
 ReactDOM.render(
     <GeneralWrapper header="Other">
+        <GeneralTechnologyFA fa="fab fa-node-js" technology="NODE.JS" />
         <GeneralTechnologyFA fa="fab fa-html5" technology="HTML5" />
         <GeneralTechnologyFA fa="fab fa-css3-alt" technology="CSS3" />
-        <GeneralTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
-        <GeneralTechnologyFA fa="fas fa-mobile-alt" technology="RESPONSIVE WEB DESIGN" />
+        <GeneralTechnologyFA fa="fas fa-mobile-alt" technology="RWD" />
         <GeneralTechnologyFA fa="fab fa-git-alt" technology="GIT" />
         <GeneralTechnologyImg src="images/vscode.png" technology="VS CODE" />
         <GeneralTechnologyImg src="images/postman.png" technology="POSTMAN API" />
@@ -223,6 +224,7 @@ ReactDOM.render(
             <ProjectTechnologiesList>
                 <ProjectTechnologyFA fa="fab fa-js-square" technology="JAVASCRIPT" />
                 <ProjectTechnologyFA fa="fab fa-node-js" technology="NODE.JS" />
+                <ProjectTechnologyImg src="images/express.png" technology="EXPRESS" />
                 <ProjectTechnologyFA fa="fab fa-html5" technology="HTML5" />
                 <ProjectTechnologyFA fa="fab fa-css3" technology="CSS3" />
                 <ProjectTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
@@ -244,6 +246,7 @@ ReactDOM.render(
             <ProjectTechnologiesList>
                 <ProjectTechnologyFA fa="fab fa-js-square" technology="JAVASCRIPT" />
                 <ProjectTechnologyFA fa="fab fa-node-js" technology="NODE.JS" />
+                <ProjectTechnologyImg src="images/express.png" technology="EXPRESS" />
                 <ProjectTechnologyFA fa="fab fa-react" technology="REACT" />
                 <ProjectTechnologyFA fa="fab fa-html5" technology="HTML5" />
                 <ProjectTechnologyFA fa="fab fa-css3" technology="CSS3" />
@@ -266,6 +269,7 @@ ReactDOM.render(
             <ProjectTechnologiesList>
                 <ProjectTechnologyFA fa="fab fa-js-square" technology="JAVASCRIPT" />
                 <ProjectTechnologyFA fa="fab fa-node-js" technology="NODE.JS" />
+                <ProjectTechnologyImg src="images/express.png" technology="EXPRESS" />
                 <ProjectTechnologyFA fa="fab fa-html5" technology="HTML5" />
                 <ProjectTechnologyFA fa="fab fa-css3" technology="CSS3" />
             </ProjectTechnologiesList>
