@@ -14,7 +14,7 @@
     box-sizing: border-box;
     width: 400px;
     height: 98vh;
-    padding-top: 70px;
+    padding: 70px 0 10px;
     background-color: black;
 }
 
@@ -52,8 +52,7 @@
 
 .general-details {
     overflow-x: hidden;
-    overflow-y: scroll;
-    scrollbar-color: var(--main) transparent;
+    scrollbar-color: var(--main) var(--main-darker);
     scrollbar-width: thin;
     flex-direction: column;
     align-items: center;
@@ -76,7 +75,7 @@
 }
 
 .general-details::-webkit-scrollbar-track {
-    background: transparent;
+    background: var(--main-darker);
 }
 
 .photo {

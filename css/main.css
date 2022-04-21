@@ -14,7 +14,7 @@
 
 /* Main page styles */
 html {
-    scrollbar-color: black var(--main);
+    scrollbar-color: var(--main) var(--main-darker);
     scrollbar-width: thin;
     scroll-behavior: smooth;
 }
@@ -25,11 +25,11 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: black;
+    background: var(--main);
 }
 
 html::-webkit-scrollbar-track {
-    background: var(--main);
+    background: var(--main-darker);
 }
 
 body {
