@@ -115,18 +115,22 @@ function ContactLink(props) {
 
 // Render general info 
 ReactDOM.render(
-    <GeneralWrapper header="Languages">
+    <GeneralWrapper header="Frontend">
         <GeneralTechnologyFA fa="fab fa-js-square" technology="JAVASCRIPT" />
-        <GeneralTechnologyFA fa="fab fa-python" technology="PYTHON" />
+        <GeneralTechnologyFA fa="fab fa-react" technology="REACT" />
+        <GeneralTechnologyFA fa="fab fa-html5" technology="HTML5" />
+        <GeneralTechnologyFA fa="fab fa-css3-alt" technology="CSS3" />
+        <GeneralTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
+        <GeneralTechnologyFA fa="fas fa-mobile-alt" technology="RWD" />
     </GeneralWrapper>,
     document.getElementById('general1')
 )
 
 ReactDOM.render(
-    <GeneralWrapper header="Frameworks">
-        <GeneralTechnologyFA fa="fab fa-react" technology="REACT" />
-        <GeneralTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
+    <GeneralWrapper header="Other">
+        <GeneralTechnologyFA fa="fab fa-node-js" technology="NODE.JS" />
         <GeneralTechnologyImg src="images/express.png" technology="EXPRESS" />
+        <GeneralTechnologyFA fa="fab fa-python" technology="PYTHON" />
         <GeneralTechnologyImg src="images/django.png" technology="DJANGO" />
         <GeneralTechnologyImg src="images/kivy.png" technology="KIVY" />
     </GeneralWrapper>,
@@ -134,13 +138,9 @@ ReactDOM.render(
 )
 
 ReactDOM.render(
-    <GeneralWrapper header="Other">
-        <GeneralTechnologyFA fa="fab fa-html5" technology="HTML5" />
-        <GeneralTechnologyFA fa="fab fa-css3-alt" technology="CSS3" />
-        <GeneralTechnologyFA fa="fas fa-mobile-alt" technology="RWD" />
-        <GeneralTechnologyFA fa="fab fa-node-js" technology="NODE.JS" />
-        <GeneralTechnologyFA fa="fab fa-git-alt" technology="GIT" />
+    <GeneralWrapper header="Tools">
         <GeneralTechnologyImg src="images/vscode.png" technology="VS CODE" />
+        <GeneralTechnologyFA fa="fab fa-git-alt" technology="GIT" />
         <GeneralTechnologyImg src="images/postman.png" technology="POSTMAN API" />
     </GeneralWrapper>,
     document.getElementById('general3')
