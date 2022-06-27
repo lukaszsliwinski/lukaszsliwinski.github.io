@@ -12,11 +12,11 @@ const plContent = {
 
     aboutContent: `&emsp;&emsp;&emsp;Jestem początkującym programistą stawiającym pierwsze kroki w&nbsp;tworzeniu 
     aplikacji internetowych. W&nbsp;trakcie samodzielnej nauki poznałem podstawową składnię takich języków jak 
-    Python oraz JavaScript. W&nbsp;ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy 
-    tworzenia backend&#8209;u i&nbsp;frontend&#8209;u aplikacji, sposoby komunikacji między nimi, 
+    JavaScipt oraz Python. W&nbsp;ramach ćwiczeń praktycznych utworzyłem kilka aplikacji poznając podstawy 
+    tworzenia frontend&#8209;u i&nbsp;backend&#8209;u aplikacji, sposoby komunikacji między nimi, bazy danych, 
     tworzenie szablonów responsywnych i&nbsp;system kontroli wersji. Poniżej przedstawiam kilka efektów mojej 
-    dotychczasowej nauki. Poszukuję nowych wyzwań, które umożliwią mi dalszy rozwój i&nbsp;poszerzenie praktycznej 
-    wiedzy.`,
+    dotychczasowej nauki. Obecnie doskonalę swoje umiejętności w&nbsp;zakresie frontendu z&nbsp;wykorzystaniem 
+    m.in. Reacta oraz Boostrapa.`,
 
     projectDetails1: `&emsp;Aplikacja internetowa pozwalająca na przesyłanie utworów do bazy danych 
     i&nbsp;odtwarzania w&nbsp;przeglądarce. Po utworzeniu konta i&nbsp;zalogowaniu do panelu administratorskiego, 
@@ -67,11 +67,11 @@ const engContent = {
 
     aboutContent: `&emsp;&emsp;&emsp;I&nbsp;am a&nbsp;beginner programmer taking the first steps in 
     creating web applications. During selfstudy, I&nbsp;learned the basic syntax of such languages ​​as 
-    Python and JavaScript. As part of the practical exercises, I&nbsp;created several applications, 
-    learning the basics of creating an application’s backend and frontend, methods of communication 
-    between them, creating responsive templates and version control system. Below 
-    I&nbsp;present some effects of my learning process. I&nbsp;am looking for new challenges 
-    which will enable me to further develop and expand my practical knowledge.`,
+    JavaScript and Python. As part of the practical exercises, I&nbsp;created several applications, 
+    learning the basics of creating an application’s frontend and backend, methods of communication 
+    between them, databases, creating responsive templates and version control system. Below 
+    I&nbsp;present some effects of my learning process. I&nbsp;am currently improving my frontend 
+    skills with i.a. React and Bootstrap.`,
 
     projectDetails1: `&emsp;A&nbsp;web application allowing to send songs to a&nbsp;database and play 
     them in a&nbsp;browser. After creating an account and logging into the administration panel, the user 
