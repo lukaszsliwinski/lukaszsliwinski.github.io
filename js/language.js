@@ -18,7 +18,27 @@ const plContent = {
     dotychczasowej nauki. Obecnie doskonalę swoje umiejętności w&nbsp;zakresie frontendu z&nbsp;wykorzystaniem 
     m.in. Reacta oraz Boostrapa.`,
 
-    projectDetails1: `&emsp;Aplikacja internetowa pozwalająca na przesyłanie utworów do bazy danych 
+    projectDetails1: `&emsp;Aplikacja internetowa pozwalająca wyszukać książkę w sklepie z wykorzystaniem google books 
+    API. Użytkownik może dodawać książki do koszyka, zmianiać ilość dodanych książek lub usunąć z koszyka. Po zatwierdzeniu
+    zamówienia koszyk zostaje opróżniony. Aplikacja wykorzystuje bibliotekę redux do kontroli stanu komponentów.`,
+
+    projectDetails2: `&emsp;Aplikacja internetowa do sprawdzania aktualnej pogody w danym mieście. Po wpisaniu
+    nazwy miasta pojawiają się informacje pogodowe, takie jak temperatura, godzina wschodu i&nbsp;zachodu słońca,
+    prędkość wiatru, zachmurzenie, ciśnienie i&nbsp;wilgotność powietrza. Aplikacja korzysta z&nbsp;zewnętrznego
+    API dostępnego na <a href="https://openweathermap.org/" class="yt-link" target="_blank" rel="noopener 
+    noreferrer">https://openweathermap.org/</a>`,
+
+    projectDetails3: `&emsp;Aplikacja internetowa pozwalająca na wysłanie maila na dowolny adres. Po uruchomieniu
+    na lokalnym serwerze, w przeglądarce wyświetlany jest formularz zawierający miejsce na tytuł maila, jego treść, oraz
+    adres odbiorcy. Do wysłania wiadomości aplikacja używa uprzednio zdefiniowanego adresu i hasła nadawcy w domenie
+    outlook.com. `,
+
+    projectDetails4: `&emsp;Aplikacja internetowa symulująca działanie prostego metronomu. W&nbsp;programie 
+    można ustawić tempo oraz metrum. W&nbsp;zależności od ilości uderzeń na minutę (bpm), program podaje włoską 
+    nazwę tempa. W&nbsp;aplikacji wykorzystano gotowy timer z&nbsp;<a href="https://www.youtube.com/watch?v=x8PBWobv6NY" 
+    class="yt-link" target="_blank" rel="noopener noreferrer">tutorialu</a>. `,
+
+    projectDetails5: `&emsp;Aplikacja internetowa pozwalająca na przesyłanie utworów do bazy danych 
     i&nbsp;odtwarzania w&nbsp;przeglądarce. Po utworzeniu konta i&nbsp;zalogowaniu do panelu administratorskiego, 
     użytkownik może dodawać utwory. W&nbsp;ramach utworu dodawany jest tytuł, wykonawca, okładka oraz plik 
     dźwiękowy. Na stronie głównej wyświetlony jest odtwarzacz wraz z&nbsp;playlistą wszystkich dodanych utworów. 
@@ -27,7 +47,7 @@ const plContent = {
     utworu, wykonawca oraz okładka. Po zakończeniu odtwarzania utworu, automatycznie odtwarzany jest następny 
     z&nbsp;playlisty. Po zakończeniu ostatniego utworu odtwarzacz jest zatrzymywany.`,
 
-    projectDetails2: `&emsp;Aplikacja internetowa do zarządzania zadaniami do wykonania. Po utworzeniu 
+    projectDetails6: `&emsp;Aplikacja internetowa do zarządzania zadaniami do wykonania. Po utworzeniu 
     konta i&nbsp;zalogowaniu można w&nbsp;aplikacji dodawać zadania wraz z&nbsp;terminem wykonania. Można 
     utworzyć więcej niż jedno konto, każdy użytkownik ma wtedy dostęp tylko do swoich zadań. Strona główna 
     podzielona jest na 4&nbsp;kolumny. 
@@ -37,26 +57,6 @@ const plContent = {
     z&nbsp;<a href="https://www.youtube.com/watch?v=llbtoQTt4qw" class="yt-link" target="_blank" rel="noopener 
     noreferrer">tutorialu</a>, która została zmodyfikowana i&nbsp;rozszerzona o&nbsp;kolumny do sortowania 
     zadań po dacie. `,
-
-    projectDetails3: `&emsp;Aplikacja internetowa do sprawdzania aktualnej pogody w danym mieście. Po wpisaniu
-    nazwy miasta pojawiają się informacje pogodowe, takie jak temperatura, godzina wschodu i&nbsp;zachodu słońca,
-    prędkość wiatru, zachmurzenie, ciśnienie i&nbsp;wilgotność powietrza. Aplikacja korzysta z&nbsp;zewnętrznego
-    API dostępnego na <a href="https://openweathermap.org/" class="yt-link" target="_blank" rel="noopener 
-    noreferrer">https://openweathermap.org/</a>`,
-
-    projectDetails4: `&emsp;Aplikacja internetowa pozwalająca na wysłanie maila na dowolny adres. Po uruchomieniu
-    na lokalnym serwerze, w przeglądarce wyświetlany jest formularz zawierający miejsce na tytuł maila, jego treść, oraz
-    adres odbiorcy. Do wysłania wiadomości aplikacja używa uprzednio zdefiniowanego adresu i hasła nadawcy w domenie
-    outlook.com. `,
-
-    projectDetails5: `&emsp;Aplikacja internetowa symulująca działanie prostego metronomu. W&nbsp;programie 
-    można ustawić tempo oraz metrum. W&nbsp;zależności od ilości uderzeń na minutę (bpm), program podaje włoską 
-    nazwę tempa. W&nbsp;aplikacji wykorzystano gotowy timer z&nbsp;<a href="https://www.youtube.com/watch?v=x8PBWobv6NY" 
-    class="yt-link" target="_blank" rel="noopener noreferrer">tutorialu</a>. `,
-
-    projectDetails6: `&emsp;Aplikacja internetowa pozwalająca wyszukać książkę w sklepie z wykorzystaniem google books 
-    API. Użytkownik może dodawać książki do koszyka, zmianiać ilość dodanych książek lub usunąć z koszyka. Po zatwierdzeniu
-    zamówienia koszyk zostaje opróżniony. Aplikacja wykorzystuje bibliotekę redux do kontroli stanu komponentów.`,
 };
 
 // Define english content
@@ -77,7 +77,26 @@ const engContent = {
     I&nbsp;present some effects of my learning process. I&nbsp;am currently improving my frontend 
     skills with i.a. React and Bootstrap.`,
 
-    projectDetails1: `&emsp;A&nbsp;web application allowing to send songs to a&nbsp;database and play 
+    projectDetails1: `&emsp;A&nbsp;web application for searching books in store using google books API. 
+    In the app the user can add books to cart, change their amount or delete from cart. After submit, 
+    the cart is empty. Application is based on redux library to control the state.`,
+
+    projectDetails2: `&emsp;A&nbsp;web application for checking actual weather in choosen city. After writing
+    city name, there are shown weather conditions like temperature, sunset and sunrise time, wind speed, cloudiness,
+    pressure and humidity. The app uses external API from <a href="https://openweathermap.org/" class="yt-link" target="_blank" rel="noopener 
+    noreferrer">https://openweathermap.org/</a>`,
+
+    projectDetails3: `&emsp;A&nbsp;web application allowing to send an e-mail to any address. After run
+    on local host, the browser displays contact form for title, message and recipient's address. The app uses
+    previously set outlook account and password to send a message.`,
+
+    projectDetails4: `&emsp;A&nbsp;web application that simulates a&nbsp;simple music metronome. 
+    You can set the tempo and the meter in the program. Depending on the value of beats per minute (bmp), 
+    the program displays the Italian tempo name. A&nbsp;timer from a&nbsp;<a 
+    href="https://www.youtube.com/watch?v=x8PBWobv6NY" class="yt-link" target="_blank" rel="noopener 
+    noreferrer">tutorial</a> is used in the application.`,
+
+    projectDetails5: `&emsp;A&nbsp;web application allowing to send songs to a&nbsp;database and play 
     them in a&nbsp;browser. After creating an account and logging into the administration panel, the user 
     can add songs. For each song they can add the title, artist, cover image and music file. On the main 
     page there is a&nbsp;player with playlist containing all added songs. The player allows for playing songs, 
@@ -86,7 +105,7 @@ const engContent = {
     the song, the next song from the playlist starts automatically. After the end of the last song, the player 
     stops.`,
 
-    projectDetails2: `&emsp;A&nbsp;web application for task management. After creating an account and 
+    projectDetails6: `&emsp;A&nbsp;web application for task management. After creating an account and 
     logging in, the user can add tasks indicating a&nbsp;deadline. It is possible to create more than one 
     account, every user has access only to their own tasks. 
     The main page is divided into 4&nbsp;columns. The first 3&nbsp;columns filter tasks by deadlines (overdue, 
@@ -95,25 +114,6 @@ const engContent = {
     The base application from the <a href="https://www.youtube.com/watch?v=llbtoQTt4qw" 
     class="yt-link" target="_blank" rel="noopener noreferrer">tutorial</a> was modified and expanded 
     -&nbsp;columns for sorting by deadline were added.`,
-
-    projectDetails3: `&emsp;A&nbsp;web application for checking actual weather in choosen city. After writing
-    city name, there are shown weather conditions like temperature, sunset and sunrise time, wind speed, cloudiness,
-    pressure and humidity. The app uses external API from <a href="https://openweathermap.org/" class="yt-link" target="_blank" rel="noopener 
-    noreferrer">https://openweathermap.org/</a>`,
-
-    projectDetails4: `&emsp;A&nbsp;web application allowing to send an e-mail to any address. After run
-    on local host, the browser displays contact form for title, message and recipient's address. The app uses
-    previously set outlook account and password to send a message.`,
-
-    projectDetails5: `&emsp;A&nbsp;web application that simulates a&nbsp;simple music metronome. 
-    You can set the tempo and the meter in the program. Depending on the value of beats per minute (bmp), 
-    the program displays the Italian tempo name. A&nbsp;timer from a&nbsp;<a 
-    href="https://www.youtube.com/watch?v=x8PBWobv6NY" class="yt-link" target="_blank" rel="noopener 
-    noreferrer">tutorial</a> is used in the application.`,
-
-    projectDetails6: `&emsp;A&nbsp;web application for searching books in store using google books API. 
-    In the app the user can add books to cart, change their amount or delete from cart. After submit, 
-    the cart is empty. Application is based on redux library to control the state.`,
 };
 
 

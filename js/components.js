@@ -176,42 +176,22 @@ ReactDOM.render(
 ReactDOM.render(
     <Project>
             <ProjectHeader 
-                name="Music Player"
-                demoLink="https://musicplayerportfolio.pythonanywhere.com/"
-                githubLink="https://github.com/lukaszsliwinski/music_player/"            
+                name="Book Store"
+                demoLink="https://bookstoreportfolio.herokuapp.com/"
+                githubLink="https://github.com/lukaszsliwinski/book_store/"            
             />
             <ProjectTechnologiesList>
-                <ProjectTechnologyFA fa="fab fa-python" technology="PYTHON" />
-                <ProjectTechnologyImg src="images/django.png" technology="DJANGO" />
-                <ProjectTechnologyImg src="images/sqlite.png" technology="SQLITE" />
+                <ProjectTechnologyFA fa="fab fa-js-square" technology="JAVASCRIPT" />
+                <ProjectTechnologyFA fa="fab fa-react" technology="REACT" />
                 <ProjectTechnologyFA fa="fab fa-html5" technology="HTML5" />
                 <ProjectTechnologyFA fa="fab fa-css3" technology="CSS3" />
-                <ProjectTechnologyFA fa="fab fa-js-square" technology="JAVASCRIPT" />
+                <ProjectTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
+                <ProjectTechnologyFA fa="fas fa-mobile-alt" technology="RWD" />
             </ProjectTechnologiesList>
             <ProjectDetails id="projectDetails1" />
-            <ProjectScreen src="screens/player.png" />
+            <ProjectScreen src="screens/book.png" />
     </Project>,
     document.getElementById('project1')
-)
-
-ReactDOM.render(
-    <Project>
-            <ProjectHeader 
-                name="Task Planner"
-                demoLink="https://taskplanner.pythonanywhere.com/"
-                githubLink="https://github.com/lukaszsliwinski/task_planner/"            
-            />
-            <ProjectTechnologiesList>
-                <ProjectTechnologyFA fa="fab fa-python" technology="PYTHON" />
-                <ProjectTechnologyImg src="images/django.png" technology="DJANGO" />
-                <ProjectTechnologyImg src="images/sqlite.png" technology="SQLITE" />
-                <ProjectTechnologyFA fa="fab fa-html5" technology="HTML5" />
-                <ProjectTechnologyFA fa="fab fa-css3" technology="CSS3" />
-            </ProjectTechnologiesList>
-            <ProjectDetails id="projectDetails2" />
-            <ProjectScreen src="screens/task.png" />
-    </Project>,
-    document.getElementById('project2')
 )
 
 ReactDOM.render(
@@ -230,10 +210,10 @@ ReactDOM.render(
                 <ProjectTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
                 <ProjectTechnologyFA fa="fas fa-mobile-alt" technology="RWD" />
             </ProjectTechnologiesList>
-            <ProjectDetails id="projectDetails3" />
+            <ProjectDetails id="projectDetails2" />
             <ProjectScreen src="screens/weather.png" />
     </Project>,
-    document.getElementById('project3')
+    document.getElementById('project2')
 )
 
 ReactDOM.render(
@@ -253,10 +233,10 @@ ReactDOM.render(
                 <ProjectTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
                 <ProjectTechnologyFA fa="fas fa-mobile-alt" technology="RWD" />
             </ProjectTechnologiesList>
-            <ProjectDetails id="projectDetails4" />
+            <ProjectDetails id="projectDetails3" />
             <ProjectScreen src="screens/email.png" />
     </Project>,
-    document.getElementById('project4')
+    document.getElementById('project3')
 )
 
 ReactDOM.render(
@@ -273,8 +253,29 @@ ReactDOM.render(
                 <ProjectTechnologyFA fa="fab fa-html5" technology="HTML5" />
                 <ProjectTechnologyFA fa="fab fa-css3" technology="CSS3" />
             </ProjectTechnologiesList>
-            <ProjectDetails id="projectDetails5" />
+            <ProjectDetails id="projectDetails4" />
             <ProjectScreen src="screens/metronome.png" />
+    </Project>,
+    document.getElementById('project4')
+)
+
+ReactDOM.render(
+    <Project>
+            <ProjectHeader 
+                name="Music Player"
+                demoLink="https://musicplayerportfolio.pythonanywhere.com/"
+                githubLink="https://github.com/lukaszsliwinski/music_player/"            
+            />
+            <ProjectTechnologiesList>
+                <ProjectTechnologyFA fa="fab fa-python" technology="PYTHON" />
+                <ProjectTechnologyImg src="images/django.png" technology="DJANGO" />
+                <ProjectTechnologyImg src="images/sqlite.png" technology="SQLITE" />
+                <ProjectTechnologyFA fa="fab fa-html5" technology="HTML5" />
+                <ProjectTechnologyFA fa="fab fa-css3" technology="CSS3" />
+                <ProjectTechnologyFA fa="fab fa-js-square" technology="JAVASCRIPT" />
+            </ProjectTechnologiesList>
+            <ProjectDetails id="projectDetails5" />
+            <ProjectScreen src="screens/player.png" />
     </Project>,
     document.getElementById('project5')
 )
@@ -282,24 +283,22 @@ ReactDOM.render(
 ReactDOM.render(
     <Project>
             <ProjectHeader 
-                name="Book Store"
-                demoLink="https://bookstoreportfolio.herokuapp.com/"
-                githubLink="https://github.com/lukaszsliwinski/book_store/"            
+                name="Task Planner"
+                demoLink="https://taskplanner.pythonanywhere.com/"
+                githubLink="https://github.com/lukaszsliwinski/task_planner/"            
             />
             <ProjectTechnologiesList>
-                <ProjectTechnologyFA fa="fab fa-js-square" technology="JAVASCRIPT" />
-                <ProjectTechnologyFA fa="fab fa-react" technology="REACT" />
+                <ProjectTechnologyFA fa="fab fa-python" technology="PYTHON" />
+                <ProjectTechnologyImg src="images/django.png" technology="DJANGO" />
+                <ProjectTechnologyImg src="images/sqlite.png" technology="SQLITE" />
                 <ProjectTechnologyFA fa="fab fa-html5" technology="HTML5" />
                 <ProjectTechnologyFA fa="fab fa-css3" technology="CSS3" />
-                <ProjectTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
-                <ProjectTechnologyFA fa="fas fa-mobile-alt" technology="RWD" />
             </ProjectTechnologiesList>
             <ProjectDetails id="projectDetails6" />
-            <ProjectScreen src="screens/book.png" />
+            <ProjectScreen src="screens/task.png" />
     </Project>,
     document.getElementById('project6')
 )
-
 
 
 // Render contact section
