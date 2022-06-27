@@ -53,6 +53,10 @@ const plContent = {
     można ustawić tempo oraz metrum. W&nbsp;zależności od ilości uderzeń na minutę (bpm), program podaje włoską 
     nazwę tempa. W&nbsp;aplikacji wykorzystano gotowy timer z&nbsp;<a href="https://www.youtube.com/watch?v=x8PBWobv6NY" 
     class="yt-link" target="_blank" rel="noopener noreferrer">tutorialu</a>. `,
+
+    projectDetails6: `&emsp;Aplikacja internetowa pozwalająca wyszukać książkę w sklepie z wykorzystaniem google books 
+    API. Użytkownik może dodawać książki do koszyka, zmianiać ilość dodanych książek lub usunąć z koszyka. Po zatwierdzeniu
+    zamówienia koszyk zostaje opróżniony. Aplikacja wykorzystuje bibliotekę redux do kontroli stanu komponentów.`,
 };
 
 // Define english content
@@ -106,6 +110,10 @@ const engContent = {
     the program displays the Italian tempo name. A&nbsp;timer from a&nbsp;<a 
     href="https://www.youtube.com/watch?v=x8PBWobv6NY" class="yt-link" target="_blank" rel="noopener 
     noreferrer">tutorial</a> is used in the application.`,
+
+    projectDetails6: `&emsp;A&nbsp;web application for searching books in store using google books API. 
+    In the app the user can add books to cart, change their amount or delete from cart. After submit, 
+    the cart is empty. Application is based on redux library to control the state.`,
 };
 
 

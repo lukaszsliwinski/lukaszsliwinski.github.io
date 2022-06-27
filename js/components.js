@@ -279,6 +279,28 @@ ReactDOM.render(
     document.getElementById('project5')
 )
 
+ReactDOM.render(
+    <Project>
+            <ProjectHeader 
+                name="Book Store"
+                demoLink="https://bookstoreportfolio.herokuapp.com/"
+                githubLink="https://github.com/lukaszsliwinski/book_store/"            
+            />
+            <ProjectTechnologiesList>
+                <ProjectTechnologyFA fa="fab fa-js-square" technology="JAVASCRIPT" />
+                <ProjectTechnologyFA fa="fab fa-react" technology="REACT" />
+                <ProjectTechnologyFA fa="fab fa-html5" technology="HTML5" />
+                <ProjectTechnologyFA fa="fab fa-css3" technology="CSS3" />
+                <ProjectTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
+                <ProjectTechnologyFA fa="fas fa-mobile-alt" technology="RWD" />
+            </ProjectTechnologiesList>
+            <ProjectDetails id="projectDetails6" />
+            <ProjectScreen src="screens/book.png" />
+    </Project>,
+    document.getElementById('project6')
+)
+
+
 
 // Render contact section
 ReactDOM.render(
