@@ -122,6 +122,7 @@ ReactDOM.render(
         <GeneralTechnologyFA fa="fab fa-css3-alt" technology="CSS3" />
         <GeneralTechnologyFA fa="fab fa-bootstrap" technology="BOOTSTRAP" />
         <GeneralTechnologyFA fa="fas fa-mobile-alt" technology="RWD" />
+        <GeneralTechnologyImg src="images/jquery.png" technology="JQUERY" />
     </GeneralWrapper>,
     document.getElementById('general1')
 )
@@ -250,6 +251,7 @@ ReactDOM.render(
                 <ProjectTechnologyFA fa="fab fa-js-square" technology="JAVASCRIPT" />
                 <ProjectTechnologyFA fa="fab fa-node-js" technology="NODE.JS" />
                 <ProjectTechnologyImg src="images/express.png" technology="EXPRESS" />
+                <ProjectTechnologyImg src="images/jquery.png" technology="JQUERY" />
                 <ProjectTechnologyFA fa="fab fa-html5" technology="HTML5" />
                 <ProjectTechnologyFA fa="fab fa-css3" technology="CSS3" />
             </ProjectTechnologiesList>
