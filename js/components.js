@@ -199,7 +199,7 @@ ReactDOM.render(
     <Project>
             <ProjectHeader 
                 name="Weather App"
-                demoLink="https://weatherappportfolio.herokuapp.com/"
+                demoLink="https://weatherappportfoliov1.herokuapp.com/"
                 githubLink="https://github.com/lukaszsliwinski/weather_app/"            
             />
             <ProjectTechnologiesList>
